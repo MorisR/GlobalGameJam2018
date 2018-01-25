@@ -9,13 +9,11 @@ public class AstroidMovement : GameInstance
    [SerializeField] private Vector3 direction;
    [SerializeField] private float speed;
 
-<<<<<<< HEAD
 
     [SerializeField] private SpriteRenderer renderer;
     [SerializeField] private float RemoveObjectAfterDelay = 0.5f;//remove the object while out of camera range 
      private float RemoveObjectTimeSample = -0.5f;//remove the object while out of camera range 
     private bool startRemoveInstance;
-
     private Vector3 camPos;
     
     // Use this for initialization
@@ -28,29 +26,6 @@ public class AstroidMovement : GameInstance
 	    float width = height * Screen.width / Screen.height;
 	    
     }
-=======
-    [SerializeField] bool isInSecne;
-    [SerializeField] Vector2 dirction;
-    [SerializeField] float speed;
-
-
-    public void Initialize(Vector2 dirction, float speed)
-    {
-
-    }
-
-    public void ResetInstent()
-    {
-        speed = 0;
-        dirction = Vector2.zero;
-        isInSecne = false;
-    }
-
-    // Use this for initialization
-    void Start () {
-		
-	}
->>>>>>> c87e7be009fb66f5c6510be3fe14a7c03c3fed05
 	
 	// Update is called once per frame
 	void Update () {
