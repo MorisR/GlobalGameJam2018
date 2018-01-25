@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><GroupsContainer GroupsCount="2"><MethodsGroup GroupName="g1" MethodsCount="2"><Method MethodName="e1" ArgCount="0" /><Method MethodName="e2" ArgCount="0" /></MethodsGroup><MethodsGroup GroupName="rrr" MethodsCount="0" /></GroupsContainer>="2">
+    <Method MethodName="w1" ArgCount="0" />
+    <Method MethodName="w2" ArgCount="0" />
+  </MethodsGroup>
+  <MethodsGroup GroupName="g3" MethodsCount="1">
+    <Method MethodName="t1" ArgCount="1">
+      <Parameter ArgName="i" PassingType="Normal" Type_isGenericType="True" Type="System.Collections.Generic.Dictionary`2, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Type_Count="2" Type_arg0_isGenericType="False" Type_arg0="System.String" Type_arg1_isGenericType="False" Type_arg1="UnityEngine.GameObject" />
+    </Method>
+  </MethodsGroup>
+</GroupsContainer>
