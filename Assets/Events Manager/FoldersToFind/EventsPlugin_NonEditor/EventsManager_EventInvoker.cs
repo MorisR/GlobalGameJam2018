@@ -16,9 +16,8 @@ internal static void RegisterUser(Methods.IResetInstance user){
 if(user == null) return;
 if(!_users_IResetInstance.Contains(user)) _users_IResetInstance.Add(user);
 }
-internal static void UnRegisterUser(Methods.IReset user){
+internal static void UnRegisterUser(Methods.IResetInstance user){
 if(user == null) return;
-if(_users_IReset.Contains(user)) _users_IReset.Remove(user);
 if(_users_IResetInstance.Contains(user)) _users_IResetInstance.Remove(user);
 }
 public static void ResetInstance(){
