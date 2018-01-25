@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><GroupsContainer GroupsCount="2"><MethodsGroup GroupName="g1" MethodsCount="2"><Method MethodName="e1" ArgCount="0" /><Method MethodName="e2" ArgCount="0" /></MethodsGroup><MethodsGroup GroupName="rrr" MethodsCount="0" /></GroupsContainer>="2">
+﻿<?xml version="1.0" encoding="utf-8"?><GroupsContainer GroupsCount="1"><MethodsGroup GroupName="AstroidEvents" MethodsCount="1"><Method MethodName="Reset" ArgCount="0" /></MethodsGroup></GroupsContainer>er>oup></GroupsContainer>pName="rrr" MethodsCount="0" /></GroupsContainer>="2">
     <Method MethodName="w1" ArgCount="0" />
     <Method MethodName="w2" ArgCount="0" />
   </MethodsGroup>
