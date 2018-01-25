@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><GroupsContainer GroupsCount="1"><MethodsGroup GroupName="AstroidEvents" MethodsCount="1"><Method MethodName="Reset" ArgCount="0" /></MethodsGroup></GroupsContainer>er>oup></GroupsContainer>pName="rrr" MethodsCount="0" /></GroupsContainer>="2">
-    <Method MethodName="w1" ArgCount="0" />
+﻿<?xml version="1.0" encoding="utf-8"?><GroupsContainer GroupsCount="1"><MethodsGroup GroupName="Resetable" MethodsCount="1"><Method MethodName="ResetInstance" ArgCount="0" /></MethodsGroup></GroupsContainer>"Normal" Type_isGenericType="False" Type="System.Int32" /></Method></MethodsGroup></GroupsContainer>"w1" ArgCount="0" />
     <Method MethodName="w2" ArgCount="0" />
   </MethodsGroup>
   <MethodsGroup GroupName="g3" MethodsCount="1">

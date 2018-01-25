@@ -21,10 +21,11 @@ GameObject:
   - component: {fileID: 4358076062903324}
   - component: {fileID: 212985290532314152}
   - component: {fileID: 58944825177661466}
-  - component: {fileID: 114248345212411784}
+  - component: {fileID: 114282339247410730}
+  - component: {fileID: 114955796504510592}
   m_Layer: 0
-  m_Name: SceneObjectBase
-  m_TagString: Untagged
+  m_Name: AstroidBase
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,7 +58,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.08
---- !u!114 &114248345212411784
+--- !u!114 &114282339247410730
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -65,10 +66,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1844560043374784}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21c65a41786913d489e91f1a1fc256a5, type: 3}
+  m_Script: {fileID: 11500000, guid: d0f3b2c1476d5624a968db47bd6a01ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instance: {fileID: 0}
+--- !u!114 &114955796504510592
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1844560043374784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52af20697fb313d4cb94aef8c351a6cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   collider: {fileID: 58944825177661466}
+  movedObject: {fileID: 4358076062903324}
+  direction: {x: 0, y: 0, z: 0}
+  speed: 0
+  renderer: {fileID: 212985290532314152}
+  RemoveObjectAfterDelay: 0.5
 --- !u!212 &212985290532314152
 SpriteRenderer:
   m_ObjectHideFlags: 1

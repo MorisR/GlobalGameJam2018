@@ -6,25 +6,26 @@ using System.Linq;
 
 
 namespace Events.Groups {
-namespace AstroidEvents {
+namespace Resetable {
 namespace Methods {
-public interface IReset : Tools.IEventMethodBase{ void Reset(); }
+public interface IResetInstance : Tools.IEventMethodBase{ void ResetInstance(); }
 
 }public static class Invoke {
-static List<Methods.IReset> _users_IReset  = new List<Methods.IReset>();
-internal static void RegisterUser(Methods.IReset user){
+static List<Methods.IResetInstance> _users_IResetInstance  = new List<Methods.IResetInstance>();
+internal static void RegisterUser(Methods.IResetInstance user){
 if(user == null) return;
-if(!_users_IReset.Contains(user)) _users_IReset.Add(user);
+if(!_users_IResetInstance.Contains(user)) _users_IResetInstance.Add(user);
 }
 internal static void UnRegisterUser(Methods.IReset user){
 if(user == null) return;
 if(_users_IReset.Contains(user)) _users_IReset.Remove(user);
+if(_users_IResetInstance.Contains(user)) _users_IResetInstance.Remove(user);
 }
-public static void Reset(){
-_users_IReset.ForEach(x=> x.Reset());   
+public static void ResetInstance(){
+_users_IResetInstance.ForEach(x=> x.ResetInstance());   
 }
 
-}public interface IAll_Group_Events:Methods.IReset{ }
+}public interface IAll_Group_Events:Methods.IResetInstance{ }
 
 }
 }
@@ -33,12 +34,12 @@ _users_IReset.ForEach(x=> x.Reset());
 namespace Events {
 public partial class Tools {
 static partial void RegesterUserImplementation(object user)  {
-if(!(user is Tools.IEventMethodBase))return; if(user is Groups.AstroidEvents.Methods.IReset)
-	Groups.AstroidEvents.Invoke.RegisterUser(user as Groups.AstroidEvents.Methods.IReset);
+if(!(user is Tools.IEventMethodBase))return; if(user is Groups.Resetable.Methods.IResetInstance)
+	Groups.Resetable.Invoke.RegisterUser(user as Groups.Resetable.Methods.IResetInstance);
 
 }static partial void UnRegesterUserImplementation(object user)  {
-if(!(user is Tools.IEventMethodBase))return; if(user is Groups.AstroidEvents.Methods.IReset)
-	Groups.AstroidEvents.Invoke.UnRegisterUser(user as Groups.AstroidEvents.Methods.IReset);
+if(!(user is Tools.IEventMethodBase))return; if(user is Groups.Resetable.Methods.IResetInstance)
+	Groups.Resetable.Invoke.UnRegisterUser(user as Groups.Resetable.Methods.IResetInstance);
 
 }
 }

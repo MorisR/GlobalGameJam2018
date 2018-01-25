@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Astroid :   MonoBehaviour
-    ,Events.Groups.AstroidEvents.IAll_Group_Events
+    ,Events.Groups.Resetable.IAll_Group_Events
 {
     [SerializeField] private GameObject instance;
 
@@ -19,8 +19,9 @@ public class Astroid :   MonoBehaviour
 		
 	}
 
-    public void Reset()
+
+    public void ResetInstance()
     {
-     //todo Implement   
+        throw new System.NotImplementedException();
     }
 }
