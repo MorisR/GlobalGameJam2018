@@ -25,6 +25,14 @@ public class AbiltyBase : MonoBehaviour {
         }
     }
 
+    public float PercentCooldown
+    {
+        get
+        {
+            return Mathf.Min(((Time.time - coolDownTimeSimple) / coolDownDuration), 1f);
+        }
+    }
+
     // Use this for initialization
     protected virtual void Start () {
         ship=GetComponent<PlayerShip>();
