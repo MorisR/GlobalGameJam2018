@@ -7,6 +7,7 @@ TagManager:
   - Obstacle
   - AstroidDestroyer
   - UI
+  - Pizza
   layers:
   - Default
   - TransparentFX

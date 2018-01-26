@@ -24,25 +24,24 @@ public class PlayerShip : MonoBehaviour {
         }
     }
 
+    public void OnHit()
+    {
+        currentHP--;
+        Events.Groups.Player.Invoke.OnHit(currentHP);
+        currentTimeSampleIvisibility = Time.time;
+        hurtAnimator.SetTrigger("OnHitTrigger");
+        shipAnimator.SetBool("OnHit", true);
+    }
+
     public void UseAbilty(int index)
     {
 
     }
 
-    public void OnHit()
-    {
-        currentHP--;
-        currentTimeSampleIvisibility = Time.time;
-        if (IsInvonrable)
-        {
-            shipAnimator.SetBool("OnHit", true);
-            hurtAnimator.SetBool("OnHit", true);
-        }
-    }
-
     // Use this for initialization
-    void Start () {
-
+    void Start ()
+    {
+        currentHP = maxHP;
     }
 	
 	// Update is called once per frame
@@ -50,7 +49,7 @@ public class PlayerShip : MonoBehaviour {
         if (!IsInvonrable)
         {
             shipAnimator.SetBool("OnHit", false);
-            hurtAnimator.SetBool("OnHit", false);
+           // hurtAnimator.SetTrigger("OnHitTrigger");
         }
 
             if (Input.GetKeyDown((KeyCode.Z)))
@@ -63,7 +62,8 @@ public class PlayerShip : MonoBehaviour {
         if(collision.tag== "Obstacle")
         {
             if (!IsInvonrable)
-            { OnHit();
+            {
+                OnHit();
                 print("BOOM!!");
             }
 
