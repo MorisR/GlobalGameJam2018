@@ -46,6 +46,39 @@ _users_IFlyAwayFromPlayer_Vector3_Single.ForEach(x=> x.FlyAwayFromPlayer(player_
 
 }public interface IAll_Group_Events:Methods.IFlyAwayFromPlayer_Vector3_Single{ }
 
+}namespace Pausable {
+namespace Methods {
+public interface IOnPause : Tools.IEventMethodBase{ void OnPause(); }
+public interface IOnResume : Tools.IEventMethodBase{ void OnResume(); }
+
+}public static class Invoke {
+static List<Methods.IOnPause> _users_IOnPause  = new List<Methods.IOnPause>();
+static List<Methods.IOnResume> _users_IOnResume  = new List<Methods.IOnResume>();
+internal static void RegisterUser(Methods.IOnPause user){
+if(user == null) return;
+if(!_users_IOnPause.Contains(user)) _users_IOnPause.Add(user);
+}
+internal static void UnRegisterUser(Methods.IOnPause user){
+if(user == null) return;
+if(_users_IOnPause.Contains(user)) _users_IOnPause.Remove(user);
+}
+public static void OnPause(){
+_users_IOnPause.ForEach(x=> x.OnPause());   
+}
+internal static void RegisterUser(Methods.IOnResume user){
+if(user == null) return;
+if(!_users_IOnResume.Contains(user)) _users_IOnResume.Add(user);
+}
+internal static void UnRegisterUser(Methods.IOnResume user){
+if(user == null) return;
+if(_users_IOnResume.Contains(user)) _users_IOnResume.Remove(user);
+}
+public static void OnResume(){
+_users_IOnResume.ForEach(x=> x.OnResume());   
+}
+
+}public interface IAll_Group_Events:Methods.IOnPause,Methods.IOnResume{ }
+
 }
 }
 
@@ -57,12 +90,20 @@ if(!(user is Tools.IEventMethodBase))return; if(user is Groups.Resetable.Methods
 	Groups.Resetable.Invoke.RegisterUser(user as Groups.Resetable.Methods.IResetInstance);
 if(user is Groups.Astroid.Methods.IFlyAwayFromPlayer_Vector3_Single)
 	Groups.Astroid.Invoke.RegisterUser(user as Groups.Astroid.Methods.IFlyAwayFromPlayer_Vector3_Single);
+if(user is Groups.Pausable.Methods.IOnPause)
+	Groups.Pausable.Invoke.RegisterUser(user as Groups.Pausable.Methods.IOnPause);
+if(user is Groups.Pausable.Methods.IOnResume)
+	Groups.Pausable.Invoke.RegisterUser(user as Groups.Pausable.Methods.IOnResume);
 
 }static partial void UnRegesterUserImplementation(object user)  {
 if(!(user is Tools.IEventMethodBase))return; if(user is Groups.Resetable.Methods.IResetInstance)
 	Groups.Resetable.Invoke.UnRegisterUser(user as Groups.Resetable.Methods.IResetInstance);
 if(user is Groups.Astroid.Methods.IFlyAwayFromPlayer_Vector3_Single)
 	Groups.Astroid.Invoke.UnRegisterUser(user as Groups.Astroid.Methods.IFlyAwayFromPlayer_Vector3_Single);
+if(user is Groups.Pausable.Methods.IOnPause)
+	Groups.Pausable.Invoke.UnRegisterUser(user as Groups.Pausable.Methods.IOnPause);
+if(user is Groups.Pausable.Methods.IOnResume)
+	Groups.Pausable.Invoke.UnRegisterUser(user as Groups.Pausable.Methods.IOnResume);
 
 }
 }
