@@ -105,9 +105,10 @@ public class AstroidSpawner : MonoBehaviour
 
     protected Vector2 GetRandomPosInRange()
     {
-        var posTemp= new Vector2(Mathf.Min(_spawnPositionTransform.position.x, _spawnPositionTransform.position.y), Mathf.Max(_spawnPositionTransform.position.x, _spawnPositionTransform.position.y));
-        return new Vector2(Random.Range(posTemp.x, posTemp.x+ _distanceFromPos.x)
-           , Random.Range(posTemp.y, _spawnPositionTransform.position.y + _distanceFromPos.y) );
+        var pos = _spawnPositionTransform.position;
+
+        return new Vector2(Random.Range(pos.x, pos.x+ _distanceFromPos.x)
+           , Random.Range(pos.y, pos.y + _distanceFromPos.y) );
     }
     protected float GetRandomDelayBetweenSecondsInRange()
     {

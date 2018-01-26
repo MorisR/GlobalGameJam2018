@@ -62,7 +62,7 @@ public class ShipBlinkAbility : AbiltyBase
     {
         base.Update();
 
-        if (IsAvailbale && isPaused)
+        if (IsAvailbale && !isPaused)
         {
             if (Input.GetButton("HorizontalShadow") || Input.GetButton("VerticalShadow"))
                 ShowShadow();
