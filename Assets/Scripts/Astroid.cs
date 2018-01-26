@@ -52,6 +52,14 @@ public class Astroid :   MonoBehaviour
 
     }
 
+    public void FlyAwayFromPlayer(Vector3 player_location, float speed)
+    {
+        Vector3 my_location = instance.transform.position;
+        var direction_from_player = my_location - player_location;
+        direction_from_player = Quaternion.Euler(0, 0, -180) * direction_from_player;
+
+        astroidMovementComponent.Initliaze(direction_from_player, speed);
+    }
 
 
 
