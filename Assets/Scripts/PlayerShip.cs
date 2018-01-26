@@ -43,6 +43,10 @@ public class PlayerShip : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if(!IsInvonrable)shipAnimator.SetBool("OnHit",false);
+
+	    if (Input.GetKeyDown((KeyCode.Z)))
+	        Events.Groups.Astroid.Invoke.FlyAwayFromPlayer(transform.position,20f);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Events;
 using UnityEngine;
 
 [RequireComponent(typeof(AstroidMovement))]
-public class Astroid :   MonoBehaviour
+public class Astroid :   Tools.MonoBehaviour_EventManagerBase
     ,Events.Groups.Resetable.IAll_Group_Events
+    ,Events.Groups.Astroid.IAll_Group_Events
+
 {
     [SerializeField] private GameObject instance;
     [SerializeField] private AstroidMovement astroidMovementComponent;
@@ -29,7 +32,7 @@ public class Astroid :   MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
 
@@ -56,7 +59,7 @@ public class Astroid :   MonoBehaviour
     {
         Vector3 my_location = instance.transform.position;
         var direction_from_player = my_location - player_location;
-        direction_from_player = Quaternion.Euler(0, 0, -180) * direction_from_player;
+       // direction_from_player = Quaternion.Euler(0, 0, -180) * direction_from_player;
 
         astroidMovementComponent.Initliaze(direction_from_player, speed);
     }
