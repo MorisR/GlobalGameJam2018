@@ -139,8 +139,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instance: {fileID: 1844560043374784}
   astroidMovementComponent: {fileID: 114955796504510592}
-  astroidSprite: {fileID: 114506671138779008}
-  spriteRotationSpeedRange: {x: 40, y: 90}
 --- !u!114 &114506671138779008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -152,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e8af4ba2d7afb6439996440d030b8ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0
+  rotationSpeed: 40
 --- !u!114 &114955796504510592
 MonoBehaviour:
   m_ObjectHideFlags: 1
