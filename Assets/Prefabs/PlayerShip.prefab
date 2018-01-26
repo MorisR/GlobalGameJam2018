@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 114043875604637026}
   - component: {fileID: 114074947488579592}
   - component: {fileID: 50854770565972126}
+  - component: {fileID: 60953541680194720}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Untagged
@@ -142,21 +143,36 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1844560043374784}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!58 &58944825177661466
 CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1844560043374784}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.006774259, y: -0.0015053988}
+  serializedVersion: 2
+  m_Radius: 0.09881737
+--- !u!60 &60953541680194720
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -168,8 +184,26 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.08
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.001086688, y: 0.04148823}
+      - {x: -0.018530224, y: 0.060801115}
+      - {x: -0.082534514, y: 0.05650526}
+      - {x: -0.08149134, y: -0.06656761}
+      - {x: -0.015683029, y: -0.07168835}
+      - {x: 0.0012745276, y: -0.050342906}
+      - {x: 0.02336827, y: -0.044672444}
+      - {x: 0.09265598, y: -0.019246293}
+      - {x: 0.09146378, y: 0.007254238}
 --- !u!95 &95457419228430892
 Animator:
   serializedVersion: 3
@@ -202,7 +236,7 @@ MonoBehaviour:
   decelertion: 3
   minSpeed: 2
   maxSpeed: 10
-  movedObject: {fileID: 4358076062903324}
+  movedObject: {fileID: 50854770565972126}
   isMovmentEnabled: 1
 --- !u!114 &114074947488579592
 MonoBehaviour:
@@ -215,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 250af222a72912c42a7641bcb76c61e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDownDuration: 0
+  coolDownDuration: 2
   movedObject: {fileID: 4358076062903324}
   maxFule: 0
   currentFule: 0

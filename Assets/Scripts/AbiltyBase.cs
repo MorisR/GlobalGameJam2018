@@ -11,10 +11,10 @@ public class AbiltyBase : MonoBehaviour {
     float coolDownTimeSimple;
     protected PlayerShip ship;
 
-    public void Use()
+    public virtual void Use()
     {
-
-        coolDownTimeSimple = Time.time;
+        if (IsAvailbale)
+            coolDownTimeSimple = Time.time;
     }
 
     public bool IsAvailbale
@@ -28,7 +28,8 @@ public class AbiltyBase : MonoBehaviour {
     // Use this for initialization
     protected virtual void Start () {
         ship=GetComponent<PlayerShip>();
-	}
+        coolDownTimeSimple = -coolDownDuration;
+    }
 
     // Update is called once per frame
     protected virtual void Update () {
