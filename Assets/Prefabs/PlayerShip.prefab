@@ -36,6 +36,7 @@ GameObject:
   - component: {fileID: 4717818387780048}
   - component: {fileID: 212468064358424294}
   - component: {fileID: 114969733365471030}
+  - component: {fileID: 114367725774814276}
   m_Layer: 0
   m_Name: ShadowSprite
   m_TagString: Untagged
@@ -56,6 +57,7 @@ GameObject:
   - component: {fileID: 114074947488579592}
   - component: {fileID: 50854770565972126}
   - component: {fileID: 60953541680194720}
+  - component: {fileID: 114338904947781110}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Untagged
@@ -238,7 +240,30 @@ MonoBehaviour:
   currentFule: 0
   shadowHolderTransform: {fileID: 4605369830628448}
   shadowSpriteTransform: {fileID: 4717818387780048}
-  shadowDistence: 0.5
+  shadowDistanceMax: 0.5
+  shadowDistanceScale: 0.01
+--- !u!114 &114338904947781110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1844560043374784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e978834e7f827d640937a5d327d27ff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114367725774814276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1825056400240926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e978834e7f827d640937a5d327d27ff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114969733365471030
 MonoBehaviour:
   m_ObjectHideFlags: 1
