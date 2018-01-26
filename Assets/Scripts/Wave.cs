@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -53,6 +54,7 @@ public class Wave : MonoBehaviour
 
 }
 
+[Serializable]
 public class WaveSettings
 {
     [SerializeField] private float delay;
