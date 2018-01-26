@@ -253,7 +253,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4377035750015770, guid: a6f3d92362a59624bba8d168d1f1684a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5.29
+      value: -4.86
       objectReference: {fileID: 0}
     - target: {fileID: 4377035750015770, guid: a6f3d92362a59624bba8d168d1f1684a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -282,12 +282,12 @@ Prefab:
     - target: {fileID: 114156127426669272, guid: a6f3d92362a59624bba8d168d1f1684a,
         type: 2}
       propertyPath: _delayBwtweenSpawns.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114156127426669272, guid: a6f3d92362a59624bba8d168d1f1684a,
         type: 2}
       propertyPath: _delayBwtweenSpawns.y
-      value: 3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114156127426669272, guid: a6f3d92362a59624bba8d168d1f1684a,
         type: 2}
@@ -298,6 +298,11 @@ Prefab:
         type: 2}
       propertyPath: _astroidSpeedRange.y
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114156127426669272, guid: a6f3d92362a59624bba8d168d1f1684a,
+        type: 2}
+      propertyPath: _distanceFromPos.y
+      value: 9.43
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6f3d92362a59624bba8d168d1f1684a, type: 2}
