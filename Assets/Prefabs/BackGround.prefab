@@ -54,7 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isScrolling: 1
   scrollSpeed: 1
-  dircrtion: {x: 0.1, y: -0.01}
+  dircrtion: {x: 0.1, y: 0.01}
   _renderer: {fileID: 212335181712418730}
 --- !u!212 &212335181712418730
 SpriteRenderer:
