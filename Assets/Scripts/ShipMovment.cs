@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShipMovment : MonoBehaviour {
+public class ShipMovment : Events.Tools.MonoBehaviour_EventManagerBase, Events.Groups.Pausable.IAll_Group_Events
+{
 
     [Header("speed properties")]
     [SerializeField] float acceleration;
@@ -63,7 +65,22 @@ public class ShipMovment : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(isMovmentEnabled)
+        if(isMovmentEnabled && !isPaused)
         Move();
 	}
+
+    float oldSpeed;
+    bool isPaused;
+    public void OnPause()
+    {
+        isPaused = true;
+        oldSpeed = currnetSpeed;
+    }
+
+    public void OnResume()
+    {
+        isPaused = false;
+        currnetSpeed = oldSpeed;
+        oldSpeed = 0;
+    }
 }

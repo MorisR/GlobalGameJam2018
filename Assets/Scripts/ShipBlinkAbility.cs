@@ -41,7 +41,8 @@ public class ShipBlinkAbility : AbiltyBase
 
 
         if (Input.GetButtonDown("Blink"))
-            Use();
+           
+                Use();
 
     }
 
@@ -61,7 +62,7 @@ public class ShipBlinkAbility : AbiltyBase
     {
         base.Update();
 
-        if (IsAvailbale)
+        if (IsAvailbale && isPaused)
         {
             if (Input.GetButton("HorizontalShadow") || Input.GetButton("VerticalShadow"))
                 ShowShadow();
@@ -88,6 +89,7 @@ public class ShipBlinkAbility : AbiltyBase
     public override void Use()
     {
         base.Use();
-        ship.transform.position = shadowSpriteTransform.position;
+        if (!isPaused)
+            ship.transform.position = shadowSpriteTransform.position;
     }
 }
