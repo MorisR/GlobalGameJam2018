@@ -11,6 +11,8 @@ public class PlayerShip : MonoBehaviour {
     [SerializeField] float currentTimeSampleIvisibility;
     [SerializeField] float invisibilityDuration;
     [SerializeField] Animator shipAnimator;
+    [SerializeField] Animator hurtAnimator;
+
     Color shipInitialColor;
 
     public bool IsInvonrable
@@ -31,8 +33,11 @@ public class PlayerShip : MonoBehaviour {
     {
         currentHP--;
         currentTimeSampleIvisibility = Time.time;
-        if(IsInvonrable)shipAnimator.SetBool("OnHit",true);
-
+        if (IsInvonrable)
+        {
+            shipAnimator.SetBool("OnHit", true);
+            hurtAnimator.SetBool("OnHit", true);
+        }
     }
 
     // Use this for initialization
@@ -42,9 +47,13 @@ public class PlayerShip : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(!IsInvonrable)shipAnimator.SetBool("OnHit",false);
+        if (!IsInvonrable)
+        {
+            shipAnimator.SetBool("OnHit", false);
+            hurtAnimator.SetBool("OnHit", false);
+        }
 
-	    if (Input.GetKeyDown((KeyCode.Z)))
+            if (Input.GetKeyDown((KeyCode.Z)))
 	        Events.Groups.Astroid.Invoke.FlyAwayFromPlayer(transform.position,20f);
 
     }
