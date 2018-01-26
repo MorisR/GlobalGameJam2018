@@ -2,32 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(PlayerShip))]
 public class AbiltyBase : MonoBehaviour {
 
 
-    [SerializeField] float maxCoolDown;
-    [SerializeField] float currentCoolDown;
+    [SerializeField]  float coolDownDuration;
+    float coolDownTimeSimple;
 
     public void Use()
     {
 
+        coolDownTimeSimple = Time.time;
     }
 
     public bool IsAvailbale
     {
         get
         {
-            return false;//todo implement
+            return Time.time - coolDownTimeSimple >= coolDownDuration ;
         }
     }
 
     // Use this for initialization
-    void Start () {
+    protected virtual void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    protected virtual void Update () {
 		
 	}
 }
