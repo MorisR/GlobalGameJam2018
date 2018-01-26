@@ -8,6 +8,7 @@ public class Astroid :   Tools.MonoBehaviour_EventManagerBase
     ,Events.Groups.Resetable.IAll_Group_Events
     ,Events.Groups.Astroid.IAll_Group_Events
 
+
 {
     [SerializeField] private GameObject instance;
     [SerializeField] private AstroidMovement astroidMovementComponent;

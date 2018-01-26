@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerShip))]
-public class AbiltyBase : MonoBehaviour {
+public class AbiltyBase : Events.Tools.MonoBehaviour_EventManagerBase, Events.Groups.Pausable.IAll_Group_Events
+{
 
     [ Header("Cooldown")]
 
@@ -13,7 +15,7 @@ public class AbiltyBase : MonoBehaviour {
 
     public virtual void Use()
     {
-        if (IsAvailbale)
+        if (IsAvailbale && !isPaused)
             coolDownTimeSimple = Time.time;
     }
 
@@ -40,7 +42,26 @@ public class AbiltyBase : MonoBehaviour {
     }
 
     // Update is called once per frame
-    protected virtual void Update () {
-		
+    protected virtual void Update ()
+    {
+        if (isPaused)
+        {
+            coolDownTimeSimple = Time.time - tempTimeSimple;
+        }
 	}
+
+    protected bool isPaused;
+    float tempTimeSimple;
+
+    public void OnPause()
+    {
+        isPaused = true;
+        tempTimeSimple = Time.time - coolDownTimeSimple;
+    }
+
+    public void OnResume()
+    {
+        isPaused = false;
+        tempTimeSimple = 0;
+    }
 }

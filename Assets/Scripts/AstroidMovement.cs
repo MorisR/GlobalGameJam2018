@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AstroidMovement : GameInstance
+using System;
+
+public class AstroidMovement : GameInstance,Events.Groups.Pausable.IAll_Group_Events
 {
    [SerializeField] private Transform movedObject;
    //[SerializeField] private bool IsInScene;
@@ -26,10 +28,12 @@ public class AstroidMovement : GameInstance
 	    float width = height * Screen.width / Screen.height;
 	    
     }
-	
-	// Update is called once per frame
+    
+    // Update is called once per frame
     public void Initliaze(Vector3 direction, float speed)
     {
+        if (isPaused) return;
+        
         this.direction = direction.normalized;
         this.speed = speed;
         movedObject.transform.gameObject.SetActive(true);
@@ -40,24 +44,30 @@ public class AstroidMovement : GameInstance
 	    movedObject.position += Time.deltaTime * speed * direction.normalized;
 
     //    if(camPos.x)
-
-
-	    
-
-
-
     }
 
 
     public void ResetInstance()
     {
+        if (isPaused) return;
+
         this.direction = Vector3.zero;
         this.speed = 0;
-      //  startRemoveInstance = false;
+        //  startRemoveInstance = false;
+        lastSpeed = 0;
     }
-  
-   
 
+    bool isPaused;
+    float lastSpeed;
+    public void OnPause()
+    {
+        lastSpeed = speed;
+        speed = 0;
+        
+    }
 
-
+    public void OnResume()
+    {
+        speed = lastSpeed;
+    }
 }
