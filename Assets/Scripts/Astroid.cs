@@ -6,20 +6,11 @@ public class Astroid :   MonoBehaviour
     ,Events.Groups.Resetable.IAll_Group_Events
 {
     [SerializeField] private GameObject instance;
-    [SerializeField] private AstroidMovement movementComponent;
-
-    public GameObject GameObjectInstance
-    {
-        get { return instance; }
-    }
-    public AstroidMovement MovementComponent
-    {
-        get { return movementComponent; }
-    }
 
 
-    // Use this for initialization
-    void Start () {
+
+	// Use this for initialization
+	void Start () {
 		
 	}
 	
