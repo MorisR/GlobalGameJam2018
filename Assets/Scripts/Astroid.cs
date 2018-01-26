@@ -49,6 +49,7 @@ public class Astroid :   MonoBehaviour
     {
         if (collision.tag == "AstroidDestroyer")
             ResetInstance();
+
     }
 
 
