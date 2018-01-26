@@ -23,7 +23,7 @@ public class BackgroundScroller : MonoBehaviour {
     // Use this for initialization
     void Start () {
       
-        dircrtion = dircrtion.normalized;
+      //  dircrtion = dircrtion.normalized;
 
     }
 	

@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1112152754026452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.011654187, y: -0.025670774, z: 0.01685968}
+  m_LocalPosition: {x: -9.13, y: -4.94, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -54,7 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isScrolling: 1
   scrollSpeed: 1
-  dircrtion: {x: 1, y: 0}
+  dircrtion: {x: 0.1, y: -0.01}
   _renderer: {fileID: 212335181712418730}
 --- !u!212 &212335181712418730
 SpriteRenderer:
@@ -90,12 +90,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 37d2d27b3d2971140a90f8f783300e0f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a505e168ecfcee3438b547023f2d6133, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 57.6, y: 32.399998}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
