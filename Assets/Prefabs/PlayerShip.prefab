@@ -230,6 +230,7 @@ MonoBehaviour:
   currentHP: 0
   currentTimeSampleIvisibility: 0
   invisibilityDuration: 0
+  shipAnimator: {fileID: 95457419228430892}
 --- !u!212 &212114751377890564
 SpriteRenderer:
   m_ObjectHideFlags: 1
