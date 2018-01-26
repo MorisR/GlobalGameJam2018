@@ -1,16 +1,17 @@
 fileFormatVersion: 2
-guid: d8ffce7516503ad44856d7a80ba94926
-timeCreated: 1517008118
+guid: 069d45c7f7c69974d8a9ae20d3e522e3
+timeCreated: 1517008343
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: lava-astroid_0
-    21300002: lava-astroid_1
-    21300004: lava-astroid_2
-    21300006: lava-astroid_3
-    21300008: lava-astroid_4
-    21300010: lava-astroid_5
-    21300012: lava-astroid_6
+    21300000: tentacle-astroid-398x247_0
+    21300002: tentacle-astroid-398x247_1
+    21300004: tentacle-astroid-398x247_2
+    21300006: tentacle-astroid-398x247_3
+    21300008: tentacle-astroid-398x247_4
+    21300010: tentacle-astroid-398x247_5
+    21300012: tentacle-astroid-398x247_6
+    21300014: tentacle-astroid-398x247_7
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -94,13 +95,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lava-astroid_0
+      name: tentacle-astroid-398x247_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 819.2
-        width: 341.33334
-        height: 204.8
+        y: 775
+        width: 400
+        height: 249
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,13 +109,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: lava-astroid_1
+      name: tentacle-astroid-398x247_1
       rect:
         serializedVersion: 2
-        x: 341
-        y: 819.2
-        width: 341.33334
-        height: 204.8
+        x: 400
+        y: 775
+        width: 400
+        height: 249
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,41 +123,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: lava-astroid_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 615.2
-        width: 341.33334
-        height: 204.8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lava-astroid_3
-      rect:
-        serializedVersion: 2
-        x: 341
-        y: 615.2
-        width: 341.33334
-        height: 204.8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lava-astroid_4
+      name: tentacle-astroid-398x247_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 411.2
-        width: 341.33334
-        height: 204.8
+        y: 526
+        width: 400
+        height: 249
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,13 +137,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: lava-astroid_5
+      name: tentacle-astroid-398x247_3
       rect:
         serializedVersion: 2
-        x: 341
-        y: 411.2
-        width: 341.33334
-        height: 204.8
+        x: 400
+        y: 526
+        width: 400
+        height: 249
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,13 +151,55 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: lava-astroid_6
+      name: tentacle-astroid-398x247_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 207.2
-        width: 341.33334
-        height: 204.8
+        y: 277
+        width: 400
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tentacle-astroid-398x247_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 277
+        width: 400
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tentacle-astroid-398x247_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 400
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tentacle-astroid-398x247_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 28
+        width: 400
+        height: 249
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
