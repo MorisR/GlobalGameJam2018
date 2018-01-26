@@ -33,4 +33,12 @@ public class Astroid :   MonoBehaviour
     {
         throw new System.NotImplementedException();
     }
+
+    public void InitlialInitliaze()
+    {
+      
+    }
+
+
+
 }

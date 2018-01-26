@@ -32,7 +32,15 @@ public class AstroidMovement : GameInstance
     }
 	
 	// Update is called once per frame
-	void Update () {
+    public void Initliaze(Vector3 direction, float speed)
+    {
+        this.direction = direction.normalized;
+        this.speed = speed;
+        movedObject.transform.gameObject.SetActive(true);
+
+    }
+
+    void Update () {
 	    movedObject.position += Time.deltaTime * speed * direction.normalized;
 
 	    if (!startRemoveInstance 
@@ -53,14 +61,6 @@ public class AstroidMovement : GameInstance
 
     }
 
-    public void Initliaze(Vector3 direction, float speed)
-    {
-        this.direction = direction.normalized;
-        this.speed = speed;
-        movedObject.transform.gameObject.SetActive(true);
-
-    }
-
 
     void ResetInstance()
     {
@@ -69,43 +69,6 @@ public class AstroidMovement : GameInstance
         movedObject.transform.gameObject.SetActive(false);
         startRemoveInstance = false;
     }
-    private bool IsInView(GameObject origin, GameObject toCheck)
-    {
-        var cam = Camera.main;   
-        Vector3 pointOnScreen = cam.WorldToScreenPoint(toCheck.GetComponentInChildren<Renderer>().bounds.center);
-
-        //Is in front
-        if (pointOnScreen.z < 0)
-        {
-            Debug.Log("Behind: " + toCheck.name);
-            return false;
-        }
-
-        //Is in FOV
-        if ((pointOnScreen.x < 0) || (pointOnScreen.x > Screen.width) ||
-            (pointOnScreen.y < 0) || (pointOnScreen.y > Screen.height))
-        {
-            Debug.Log("OutOfBounds: " + toCheck.name);
-            return false;
-        }
-
-        RaycastHit hit;
-        Vector3 heading = toCheck.transform.position - origin.transform.position;
-        Vector3 direction = heading.normalized;// / heading.magnitude;
-
-        if (Physics.Linecast(cam.transform.position, toCheck.GetComponentInChildren<Renderer>().bounds.center, out hit))
-        {
-            if (hit.transform.name != toCheck.name)
-            {
-                /* -->
-                Debug.DrawLine(cam.transform.position, toCheck.GetComponentInChildren<Renderer>().bounds.center, Color.red);
-                Debug.LogError(toCheck.name + " occluded by " + hit.transform.name);
-                */
-                Debug.Log(toCheck.name + " occluded by " + hit.transform.name);
-                return false;
-            }
-        }
-        return true;
-    }
+  
 
 }

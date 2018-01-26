@@ -116,7 +116,7 @@ public class AstroidSpawner : MonoBehaviour
         return astroidScript;
     }
 
-    protected Vector2 GetRandomPointInRange()
+    protected Vector2 GetRandomPosInRange()
     {
         return new Vector2(Random.Range(_spawnPosition.x, _spawnPosition.x+ _distanceFromPos.x)
            , Random.Range(_spawnPosition.y, _spawnPosition.y + _distanceFromPos.y) );
@@ -162,8 +162,8 @@ public class StraightAstroidSpawner: AstroidSpawner
         base.Spawn();
         if (Time.time - timeSample > GetRandomDelayBetweenSecondsInRange())
         {
-
-            
+           var astroid =  base.GetReadyAstroid(base.GetRandomPosInRange(), Quaternion.identity);
+           // astroid.
         }
     }
 
