@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(PlayerShip))]
 
-public class ShipBlinkAbility : AbiltyBase {
+public class ShipBlinkAbility : AbiltyBase
+{
 
 
     Vector2 shadowPosition;
     [Space, Space, Header("Abilty Settings")]
-    [SerializeField] Transform movedObject;
-    [SerializeField]  float maxFule;
-    [SerializeField]  float currentFule;
+    [SerializeField]
+    Transform movedObject;
+    [SerializeField] float maxFule;
+    [SerializeField] float currentFule;
 
-    [Space,Space,Header("Shadow Settings")]
-    [SerializeField] Transform shadowHolderTransform;
+    [Space, Space, Header("Shadow Settings")]
+    [SerializeField]
+    Transform shadowHolderTransform;
     [SerializeField] Transform shadowSpriteTransform;
     [SerializeField] float shadowDistence;
 
@@ -22,21 +25,21 @@ public class ShipBlinkAbility : AbiltyBase {
     public void ShowShadow()
     {
         shadowHolderTransform.gameObject.SetActive(true);
-            float shadowHorizontal = Input.GetAxis("HorizontalShadow");
-            float shadowVertical = Input.GetAxis("VerticalShadow");
+        float shadowHorizontal = Input.GetAxis("HorizontalShadow");
+        float shadowVertical = Input.GetAxis("VerticalShadow");
 
-            shadowPosition.Set(shadowHorizontal , shadowVertical);
-            shadowPosition = shadowPosition.normalized;
+        shadowPosition.Set(shadowHorizontal, shadowVertical);
+        shadowPosition = shadowPosition.normalized;
         shadowPosition.x *= -1;
 
-        shadowHolderTransform.eulerAngles = new Vector3(0, 0, Angle(shadowPosition)+90f);
+        shadowHolderTransform.eulerAngles = new Vector3(0, 0, Angle(shadowPosition) + 90f);
 
 
 
 
-        if (Input.GetButtonDown("Blink"))     
+        if (Input.GetButtonDown("Blink"))
             ship.transform.position = shadowSpriteTransform.position;
-        
+
     }
 
     public void HideShadow()
@@ -48,7 +51,7 @@ public class ShipBlinkAbility : AbiltyBase {
     {
         shadowHolderTransform.gameObject.SetActive(false);
 
-        shadowSpriteTransform.localPosition = shadowDistence*Vector3.right;
+        shadowSpriteTransform.localPosition = shadowDistence * Vector3.right;
         base.Start();
     }
     protected override void Update()
@@ -65,7 +68,7 @@ public class ShipBlinkAbility : AbiltyBase {
                 HideShadow();
         }
         else HideShadow();
-        
+
     }
 
     public static float Angle(Vector2 p_vector2)
