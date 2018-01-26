@@ -35,6 +35,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4717818387780048}
   - component: {fileID: 212468064358424294}
+  - component: {fileID: 114969733365471030}
   m_Layer: 0
   m_Name: ShadowSprite
   m_TagString: Untagged
@@ -86,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 1986649432072680}
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.5}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.5}
   m_Children: []
   m_Father: {fileID: 4358076062903324}
   m_RootOrder: 0
@@ -126,13 +127,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1825056400240926}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_Children: []
   m_Father: {fileID: 4605369830628448}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!58 &58944825177661466
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -200,6 +201,18 @@ MonoBehaviour:
   shadowHolderTransform: {fileID: 4605369830628448}
   shadowSpriteTransform: {fileID: 4717818387780048}
   shadowDistence: 0.5
+--- !u!114 &114969733365471030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1825056400240926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f659a5940b5124aad86c1c988891ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotition: {x: 0, y: 0, z: 270}
 --- !u!114 &114992279696119348
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -295,7 +308,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300008, guid: 9ade3fb790641b54282fe68a339e6417, type: 3}
   m_Color: {r: 0.26275954, g: 0.99264705, b: 0.5094113, a: 1}
   m_FlipX: 0
   m_FlipY: 0
