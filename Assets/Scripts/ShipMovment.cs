@@ -50,7 +50,7 @@ public class ShipMovment : MonoBehaviour {
             else currnetSpeed = 0;
         }
         
-            Debug.Log(currnetSpeed);
+
 
             movedObject.position +=(Vector3) direction* currnetSpeed * Time.deltaTime;
 
