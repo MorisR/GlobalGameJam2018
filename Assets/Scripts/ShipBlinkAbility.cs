@@ -60,6 +60,9 @@ public class ShipBlinkAbility : AbiltyBase {
         {
             if (Input.GetButton("HorizontalShadow") || Input.GetButton("VerticalShadow"))
                 ShowShadow();
+
+            else
+                HideShadow();
         }
         else HideShadow();
         
