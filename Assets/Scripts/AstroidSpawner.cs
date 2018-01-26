@@ -91,32 +91,39 @@ public class AstroidSpawner : MonoBehaviour
 
 	}
 
-    protected virtual void Spawn()
+    protected virtual bool Spawn()
     {
-        if (_astrodiPrefabs.Count == 0) return;
-        if (!isSpawning)return;
+        if (_astrodiPrefabs.Count == 0) return false;
+        if (!isSpawning)return false;
         if (_currentSpawnCount == _spawnCount)
         {
             isSpawning = false;
-            return;
+            return false;
         }
 
-
+       // _currentSpawnCount--;
+        return true;
     }
 
     protected Astroid GetReadyAstroid()
     {
-        Astroid astroidScript = _astroidInstances.FirstOrDefault(x=>x!= null && x.gameObject.activeInHierarchy);
-        if (astroidScript == null)
+        lock (gameObject)
         {
-            var astroidObject = Instantiate<GameObject>(_astrodiPrefabs[Random.Range(0, _astrodiPrefabs.Count)]);
-            astroidScript = astroidObject.GetComponent<Astroid>();
-            if (astroidScript == null)
-                astroidScript = astroidObject.GetComponentInChildren<Astroid>();
-            _astroidInstances.Add(astroidScript);
-        }
 
-        return astroidScript;
+
+            Astroid astroidScript = _astroidInstances.FirstOrDefault(x => x != null && !x.Instance.activeInHierarchy);
+            if (astroidScript == null)
+            {
+                var astroidObject = Instantiate<GameObject>(_astrodiPrefabs[Random.Range(0, _astrodiPrefabs.Count)]);
+                astroidScript = astroidObject.GetComponent<Astroid>();
+                if (astroidScript == null)
+                    astroidScript = astroidObject.GetComponentInChildren<Astroid>();
+                _astroidInstances.Add(astroidScript);
+                astroidScript.Instance.SetActive(false);
+            }
+            _currentSpawnCount++;
+            return astroidScript;
+        }
     }
 
     protected Vector2 GetRandomPosInRange()
@@ -131,6 +138,7 @@ public class AstroidSpawner : MonoBehaviour
     protected float GetRandomSpeedInRange()
     {
         return Random.Range(_astroidSpeedRange.x, _astroidSpeedRange.y);
+
     }
 
     private void OnDrawGizmos()

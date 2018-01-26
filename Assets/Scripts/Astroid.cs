@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AstroidMovement))]
 public class Astroid :   MonoBehaviour
     ,Events.Groups.Resetable.IAll_Group_Events
 {
@@ -13,10 +14,17 @@ public class Astroid :   MonoBehaviour
         get { return astroidMovementComponent; }
     }
 
+    public GameObject Instance
+    {
+        get { return instance; }
+    }
+
 
     // Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+	    astroidMovementComponent = GetComponent<AstroidMovement>();
+
 	}
 	
 	// Update is called once per frame
@@ -36,6 +44,14 @@ public class Astroid :   MonoBehaviour
         AstroidMovementComponent.Initliaze(movementDirection, movementSpeed);
         instance.SetActive(true);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "AstroidDestroyer")
+            ResetInstance();
+    }
+
+
 
 
 

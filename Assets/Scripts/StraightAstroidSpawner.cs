@@ -11,15 +11,18 @@ public class StraightAstroidSpawner: AstroidSpawner
 
     }
 
-    protected override void Spawn()
+    protected override bool Spawn()
     {
-        base.Spawn();
+        if(!base.Spawn())return false;
         if (Time.time - timeSample > GetRandomDelayBetweenSecondsInRange())
         {
-            var astroid =  base.GetReadyAstroid();
-            astroid.InitlialInitliaze(base.GetRandomPosInRange(), GetRandomSpeedInRange());
+            var astroid =  GetReadyAstroid();
+            astroid.Instance.transform.position = GetRandomPosInRange();
+            astroid.Instance.SetActive(true);
+            astroid.InitlialInitliaze( Vector3.left, GetRandomSpeedInRange()); //todo get random Direction
 
         }
+        return true;
     }
 
     protected override void Update()
