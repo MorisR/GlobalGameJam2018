@@ -96,23 +96,18 @@ public class AstroidSpawner : MonoBehaviour
 
     }
 
-    protected Astroid GetReadyAstroid(Vector3 wordPos,Quaternion rotation)
+    protected Astroid GetReadyAstroid()
     {
         Astroid astroidScript = _astroidInstances.FirstOrDefault(x=>x!= null && x.gameObject.activeInHierarchy);
         if (astroidScript == null)
         {
-            var astroidObject = Instantiate<GameObject>(_astrodiPrefabs[Random.Range(0, _astrodiPrefabs.Count)],
-                wordPos, rotation);
+            var astroidObject = Instantiate<GameObject>(_astrodiPrefabs[Random.Range(0, _astrodiPrefabs.Count)]);
             astroidScript = astroidObject.GetComponent<Astroid>();
             if (astroidScript == null)
                 astroidScript = astroidObject.GetComponentInChildren<Astroid>();
             _astroidInstances.Add(astroidScript);
         }
-        else
-        {
-            astroidScript.transform.position = wordPos;
-            astroidScript.transform.rotation = rotation;
-        }
+
         return astroidScript;
     }
 
@@ -138,33 +133,6 @@ public class AstroidSpawner : MonoBehaviour
         Gizmos.DrawLine(_spawnPosition + _distanceFromPos.x * Vector3.right, _spawnPosition+ _distanceFromPos);
         Gizmos.DrawLine(_spawnPosition + _distanceFromPos.y * Vector3.up, _spawnPosition + _distanceFromPos);
 
-    }
-
-
-
-
-}
-
-
-public class StraightAstroidSpawner: AstroidSpawner
-{
-    private float timeSample;
-
-    public override void StartSpawn()
-    {
-        base.StartSpawn();
-        timeSample = Time.deltaTime;
-
-    }
-
-    protected override void Spawn()
-    {
-        base.Spawn();
-        if (Time.time - timeSample > GetRandomDelayBetweenSecondsInRange())
-        {
-           var astroid =  base.GetReadyAstroid(base.GetRandomPosInRange(), Quaternion.identity);
-           // astroid.
-        }
     }
 
 

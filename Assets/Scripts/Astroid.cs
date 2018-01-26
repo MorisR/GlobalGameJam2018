@@ -6,10 +6,15 @@ public class Astroid :   MonoBehaviour
     ,Events.Groups.Resetable.IAll_Group_Events
 {
     [SerializeField] private GameObject instance;
+    [SerializeField] private AstroidMovement astroidMovementComponent;
+
+    public AstroidMovement AstroidMovementComponent
+    {
+        get { return astroidMovementComponent; }
+    }
 
 
-
-	// Use this for initialization
+    // Use this for initialization
 	void Start () {
 		
 	}
@@ -22,12 +27,14 @@ public class Astroid :   MonoBehaviour
 
     public void ResetInstance()
     {
-        throw new System.NotImplementedException();
+        AstroidMovementComponent.ResetInstance();
+        instance.SetActive(false);
     }
 
-    public void InitlialInitliaze()
+    public void InitlialInitliaze(Vector3 movementDirection, float movementSpeed)
     {
-      
+        AstroidMovementComponent.Initliaze(movementDirection, movementSpeed);
+        instance.SetActive(true);
     }
 
 

@@ -49,11 +49,10 @@ public class AstroidMovement : GameInstance
     }
 
 
-    void ResetInstance()
+    public void ResetInstance()
     {
         this.direction = Vector3.zero;
         this.speed = 0;
-        movedObject.transform.gameObject.SetActive(false);
         startRemoveInstance = false;
     }
   
