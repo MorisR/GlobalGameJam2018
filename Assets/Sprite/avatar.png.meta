@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 52041c3bdd1fc4d4d8ca78cac0a69018
-timeCreated: 1516981587
+timeCreated: 1516985164
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -106,7 +106,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 294
+        width: 295
         height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -118,9 +118,9 @@ TextureImporter:
       name: avatar_1
       rect:
         serializedVersion: 2
-        x: 294
+        x: 295
         y: 0
-        width: 294
+        width: 295
         height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -132,9 +132,9 @@ TextureImporter:
       name: avatar_2
       rect:
         serializedVersion: 2
-        x: 588
+        x: 590
         y: 0
-        width: 294
+        width: 295
         height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -146,9 +146,9 @@ TextureImporter:
       name: avatar_3
       rect:
         serializedVersion: 2
-        x: 882
+        x: 885
         y: 0
-        width: 294
+        width: 295
         height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -160,9 +160,9 @@ TextureImporter:
       name: avatar_4
       rect:
         serializedVersion: 2
-        x: 1176
+        x: 1180
         y: 0
-        width: 294
+        width: 295
         height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -174,9 +174,9 @@ TextureImporter:
       name: avatar_5
       rect:
         serializedVersion: 2
-        x: 1470
+        x: 1475
         y: 0
-        width: 294
+        width: 295
         height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -188,9 +188,9 @@ TextureImporter:
       name: avatar_6
       rect:
         serializedVersion: 2
-        x: 1764
+        x: 1770
         y: 0
-        width: 294
+        width: 295
         height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -202,9 +202,9 @@ TextureImporter:
       name: avatar_7
       rect:
         serializedVersion: 2
-        x: 2058
+        x: 2065
         y: 0
-        width: 294
+        width: 295
         height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -216,9 +216,9 @@ TextureImporter:
       name: avatar_8
       rect:
         serializedVersion: 2
-        x: 2352
+        x: 2360
         y: 0
-        width: 294
+        width: 295
         height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -230,23 +230,9 @@ TextureImporter:
       name: avatar_9
       rect:
         serializedVersion: 2
-        x: 2646
+        x: 2655
         y: 0
-        width: 294
-        height: 294
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: avatar_10
-      rect:
-        serializedVersion: 2
-        x: 2940
-        y: 0
-        width: 294
+        width: 295
         height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
