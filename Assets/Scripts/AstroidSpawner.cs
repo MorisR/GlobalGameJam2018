@@ -22,8 +22,8 @@ public class AstroidSpawner : MonoBehaviour
 
 
     [Space][Space][Header("Spawn Pos")]
-    Transform _spawnPositionTransform;
-    [SerializeField]  Vector3 _distanceFromPos;
+     protected Transform  _spawnPositionTransform;
+    [SerializeField] protected Vector3 _distanceFromPos;
 
 
     protected bool isSpawning = false;
@@ -105,20 +105,23 @@ public class AstroidSpawner : MonoBehaviour
 
     protected Vector2 GetRandomPosInRange()
     {
-        return new Vector2(Random.Range(_spawnPositionTransform.position.x, _spawnPositionTransform.position.x+ _distanceFromPos.x)
-           , Random.Range(_spawnPositionTransform.position.y, _spawnPositionTransform.position.y + _distanceFromPos.y) );
+        var posTemp= new Vector2(Mathf.Min(_spawnPositionTransform.position.x, _spawnPositionTransform.position.y), Mathf.Max(_spawnPositionTransform.position.x, _spawnPositionTransform.position.y));
+        return new Vector2(Random.Range(posTemp.x, posTemp.x+ _distanceFromPos.x)
+           , Random.Range(posTemp.y, _spawnPositionTransform.position.y + _distanceFromPos.y) );
     }
     protected float GetRandomDelayBetweenSecondsInRange()
     {
-        return Random.Range(_delayBwtweenSpawns.x, _delayBwtweenSpawns.y);
+        var posTemp = new Vector2(Mathf.Min(_delayBwtweenSpawns.x, _delayBwtweenSpawns.y), Mathf.Max(_delayBwtweenSpawns.x, _delayBwtweenSpawns.y));
+        return Random.Range(posTemp.x, posTemp.y);
     }
     protected float GetRandomSpeedInRange()
     {
+        var posTemp = new Vector2(Mathf.Min(_astroidSpeedRange.x, _astroidSpeedRange.y), Mathf.Max(_astroidSpeedRange.x, _astroidSpeedRange.y));
         return Random.Range(_astroidSpeedRange.x, _astroidSpeedRange.y);
 
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
 
         Gizmos.DrawLine(transform.position, transform.position+ _distanceFromPos.x* Vector3.right);
@@ -127,6 +130,8 @@ public class AstroidSpawner : MonoBehaviour
         Gizmos.DrawLine(transform.position + _distanceFromPos.y * Vector3.up, transform.position + _distanceFromPos);
 
     }
+
+
 
 
 

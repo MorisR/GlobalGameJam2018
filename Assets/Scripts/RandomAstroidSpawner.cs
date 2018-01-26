@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-
 public class RandomAstroidSpawner  : AstroidSpawner
 {
     private float timeSample;
@@ -32,5 +31,6 @@ public class RandomAstroidSpawner  : AstroidSpawner
 
 
     }
+
 
 }
