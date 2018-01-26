@@ -16,7 +16,9 @@ public class ShipBlinkAbility : AbiltyBase
     [SerializeField]
     Transform shadowHolderTransform;
     [SerializeField] Transform shadowSpriteTransform;
-    [SerializeField] float shadowDistence;
+    [SerializeField] float shadowDistanceMax;
+    [SerializeField] float shadowDistanceScale;
+    float shadowDistance = 0f;
 
 
 
@@ -32,7 +34,9 @@ public class ShipBlinkAbility : AbiltyBase
 
         shadowHolderTransform.eulerAngles = new Vector3(0, 0, Angle(shadowPosition) + 90f);
 
-        shadowSpriteTransform.localPosition = shadowDistence * Vector3.right;
+        shadowDistance = Mathf.Min(shadowDistanceMax, shadowDistance + shadowDistanceScale);
+
+        shadowSpriteTransform.localPosition = shadowDistance * Vector3.right;
 
 
 
@@ -44,6 +48,7 @@ public class ShipBlinkAbility : AbiltyBase
     public void HideShadow()
     {
         shadowHolderTransform.gameObject.SetActive(false);
+        shadowDistance = 0f;
     }
 
     protected override void Start()

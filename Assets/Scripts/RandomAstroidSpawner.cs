@@ -29,7 +29,8 @@ public class RandomAstroidSpawner  : AstroidSpawner
     protected override void Update()
     {
         base.Update();
-        if(Input.GetKeyDown(KeyCode.X))
-            StartSpawn();
+
+
     }
+
 }

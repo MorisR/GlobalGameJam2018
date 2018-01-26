@@ -125,8 +125,12 @@ public class AstroidSpawner : MonoBehaviour
     protected virtual void Update ()
 	{
 	    Spawn();
+        if (Input.GetKeyDown(KeyCode.X))
+            StartSpawn();
+        if (Input.GetKeyDown(KeyCode.C))
+            ResetAndStopSpawn();
 
-	}
+    }
 
     protected virtual bool Spawn()
     {

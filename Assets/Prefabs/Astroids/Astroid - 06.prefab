@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4349534197614112}
   - component: {fileID: 212625652012533338}
   - component: {fileID: 114506671138779008}
-  - component: {fileID: 95677522719581296}
+  - component: {fileID: 95074272553035746}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114955796504510592}
   - component: {fileID: 60347218786923496}
   m_Layer: 0
-  m_Name: Astroid - 03
+  m_Name: Astroid - 06
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1844560043374784}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: -0, z: 0}
+  m_LocalPosition: {x: 5.09, y: -1.16, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 4349534197614112}
@@ -83,7 +83,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -98,18 +98,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.12733905, y: 0.1806365}
-      - {x: 0.012562692, y: 0.16994275}
-      - {x: -0.0447083, y: 0.06334207}
-      - {x: -0.11425885, y: 0.11291635}
-      - {x: -0.10962961, y: 0.030836964}
-      - {x: -0.16881332, y: -0.00687989}
-      - {x: -0.17485367, y: -0.10506767}
-      - {x: -0.04164889, y: -0.1848621}
-      - {x: 0.10740826, y: -0.14309265}
-      - {x: 0.18145096, y: -0.027857382}
-      - {x: 0.18496715, y: 0.12757754}
---- !u!95 &95677522719581296
+    - - {x: -0.116654776, y: 0.07216034}
+      - {x: -0.14605398, y: 0.14799318}
+      - {x: -0.40816674, y: 0.06861844}
+      - {x: -0.35074803, y: -0.12962928}
+      - {x: -0.082866766, y: -0.04941671}
+      - {x: -0.10762081, y: 0.041816354}
+--- !u!95 &95074272553035746
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -118,7 +113,7 @@ Animator:
   m_GameObject: {fileID: 1459712047004038}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5cdf64380d4ccf64cba13f15b399e2a6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 42ebb14b66b77394c949cf468ececbed, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -200,7 +195,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 332692e937709c148b6feaf39bdcf0f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 043003aeb0479b948b275511879eca54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

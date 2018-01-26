@@ -1,21 +1,20 @@
 fileFormatVersion: 2
-guid: 043003aeb0479b948b275511879eca54
-timeCreated: 1516981201
+guid: 52041c3bdd1fc4d4d8ca78cac0a69018
+timeCreated: 1516985164
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Dabry-06animetion_0
-    21300002: Dabry-06animetion_1
-    21300004: Dabry-06animetion_2
-    21300006: Dabry-06animetion_3
-    21300008: Dabry-06animetion_4
-    21300010: Dabry-06animetion_5
-    21300012: Dabry-06animetion_6
-    21300014: Dabry-06animetion_7
-    21300016: Dabry-06animetion_8
-    21300018: Dabry-06animetion_9
-    21300020: Dabry-06animetion_10
-    21300022: Dabry-06animetion_11
+    21300000: avatar_0
+    21300002: avatar_1
+    21300004: avatar_2
+    21300006: avatar_3
+    21300008: avatar_4
+    21300010: avatar_5
+    21300012: avatar_6
+    21300014: avatar_7
+    21300016: avatar_8
+    21300018: avatar_9
+    21300020: avatar_10
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -102,153 +101,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dabry-06animetion_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 215
-        width: 91.5
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Dabry-06animetion_1
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 215
-        width: 91.5
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Dabry-06animetion_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 172
-        width: 91.5
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Dabry-06animetion_3
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 172
-        width: 91.5
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Dabry-06animetion_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 129
-        width: 91.5
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Dabry-06animetion_5
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 129
-        width: 91.5
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Dabry-06animetion_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 86
-        width: 91.5
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Dabry-06animetion_7
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 86
-        width: 91.5
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Dabry-06animetion_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 43
-        width: 91.5
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Dabry-06animetion_9
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 43
-        width: 91.5
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Dabry-06animetion_10
+      name: avatar_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 91.5
-        height: 43
+        width: 295
+        height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,13 +115,125 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Dabry-06animetion_11
+      name: avatar_1
       rect:
         serializedVersion: 2
-        x: 91
+        x: 295
         y: 0
-        width: 91.5
-        height: 43
+        width: 295
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: avatar_2
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 0
+        width: 295
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: avatar_3
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 0
+        width: 295
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: avatar_4
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 0
+        width: 295
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: avatar_5
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 0
+        width: 295
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: avatar_6
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 0
+        width: 295
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: avatar_7
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 0
+        width: 295
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: avatar_8
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 0
+        width: 295
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: avatar_9
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 0
+        width: 295
+        height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
