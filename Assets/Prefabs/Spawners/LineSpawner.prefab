@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1009585074287236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.86, y: -3.99, z: -0.15820312}
+  m_LocalPosition: {x: 10.31, y: -4.98, z: -0.15820312}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -54,7 +54,7 @@ MonoBehaviour:
   _astrodiPrefabs:
   - {fileID: 1844560043374784, guid: 1f7b9bc2cc0adeb48a24c8f06bdf8652, type: 2}
   _spawnCount: 5
-  _astroidSpeedRange: {x: -1, y: -3}
+  _astroidSpeedRange: {x: 1, y: 3}
   _delayBwtweenSpawns: {x: 0.5, y: 0.7}
   _distanceFromPos: {x: 1.01, y: 10.56, z: 0}
   _astroidInstances: []
