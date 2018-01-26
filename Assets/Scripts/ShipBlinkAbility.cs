@@ -38,7 +38,7 @@ public class ShipBlinkAbility : AbiltyBase
 
 
         if (Input.GetButtonDown("Blink"))
-            ship.transform.position = shadowSpriteTransform.position;
+            Use();
 
     }
 
@@ -57,7 +57,6 @@ public class ShipBlinkAbility : AbiltyBase
     protected override void Update()
     {
         base.Update();
-
 
         if (IsAvailbale)
         {
@@ -81,5 +80,11 @@ public class ShipBlinkAbility : AbiltyBase
         {
             return Mathf.Atan2(p_vector2.x, p_vector2.y) * Mathf.Rad2Deg;
         }
+    }
+
+    public override void Use()
+    {
+        base.Use();
+        ship.transform.position = shadowSpriteTransform.position;
     }
 }

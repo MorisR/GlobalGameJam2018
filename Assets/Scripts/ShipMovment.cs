@@ -9,7 +9,7 @@ public class ShipMovment : MonoBehaviour {
     [SerializeField] float decelertion;
     [SerializeField] float minSpeed;
     [SerializeField] float maxSpeed;
-    [SerializeField] Transform movedObject;
+    [SerializeField] Rigidbody2D movedObject;
     float currnetSpeed;
     Vector2 direction;
 
@@ -52,7 +52,7 @@ public class ShipMovment : MonoBehaviour {
         
 
 
-            movedObject.position +=(Vector3) direction* currnetSpeed * Time.deltaTime;
+            movedObject.position += direction* currnetSpeed * Time.deltaTime;
 
     }
 
