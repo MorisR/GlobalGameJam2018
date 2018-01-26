@@ -6,32 +6,12 @@ using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-[Serializable]
-public struct Wave
-{
-   
 
-/*
-    public int AstroidCount
-    {
-        get { return astroidCount; }
-        set { astroidCount = value; }
-    }
-    public Vector2 AstroidSpeedRange
-    {
-        get { return astroidSpeedRange; }
-        set { astroidSpeedRange = value; }
-    }
-    public Vector2 DelayBwtweenSpawns
-    {
-        get { return delayBwtweenSpawns; }
-        set { delayBwtweenSpawns = value; }
-    }
-    public Vector2 SpawnPosition
-    {
-        get { return spawnPosition; }
-        set { spawnPosition = value; }
-    }*/
+[Serializable]
+public class Wave
+{
+  // List<AstroidSpawner>
+
 }
 
 
@@ -155,3 +135,5 @@ public class AstroidSpawner : MonoBehaviour
 
 
 }
+
+

@@ -152,26 +152,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 212468064358424294, guid: eb6d689642758d44fb30ceea06c9ee2f,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212468064358424294, guid: eb6d689642758d44fb30ceea06c9ee2f,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 0.26275954
-      objectReference: {fileID: 0}
-    - target: {fileID: 212468064358424294, guid: eb6d689642758d44fb30ceea06c9ee2f,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 0.99264705
-      objectReference: {fileID: 0}
-    - target: {fileID: 212468064358424294, guid: eb6d689642758d44fb30ceea06c9ee2f,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 0.5094113
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb6d689642758d44fb30ceea06c9ee2f, type: 2}
   m_IsPrefabParent: 0
@@ -292,12 +272,12 @@ Prefab:
     - target: {fileID: 114156127426669272, guid: a6f3d92362a59624bba8d168d1f1684a,
         type: 2}
       propertyPath: _astroidSpeedRange.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114156127426669272, guid: a6f3d92362a59624bba8d168d1f1684a,
         type: 2}
       propertyPath: _astroidSpeedRange.y
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114156127426669272, guid: a6f3d92362a59624bba8d168d1f1684a,
         type: 2}
