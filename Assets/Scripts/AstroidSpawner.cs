@@ -49,7 +49,7 @@ public class AstroidSpawner : MonoBehaviour
 
 
     [Space][Space][Header("Spawn Pos")]
-    [SerializeField]  Vector3 _spawnPosition;
+    Transform _spawnPositionTransform;
     [SerializeField]  Vector3 _distanceFromPos;
 
 
@@ -78,21 +78,29 @@ public class AstroidSpawner : MonoBehaviour
 
 
 
-    void Start () {
-		
-	}
-    
-	// Update is called once per frame
-	void Update ()
+    protected virtual void Start ()
+    {
+        _spawnPositionTransform = transform;
+
+    }
+
+    // Update is called once per frame
+    protected virtual void Update ()
 	{
-        if(_astrodiPrefabs.Count == 0)return;
 	    Spawn();
 
 	}
 
     protected virtual void Spawn()
     {
-	    if (!isSpawning)return;
+        if (_astrodiPrefabs.Count == 0) return;
+        if (!isSpawning)return;
+        if (_currentSpawnCount == _spawnCount)
+        {
+            isSpawning = false;
+            return;
+        }
+
 
     }
 
@@ -113,8 +121,8 @@ public class AstroidSpawner : MonoBehaviour
 
     protected Vector2 GetRandomPosInRange()
     {
-        return new Vector2(Random.Range(_spawnPosition.x, _spawnPosition.x+ _distanceFromPos.x)
-           , Random.Range(_spawnPosition.y, _spawnPosition.y + _distanceFromPos.y) );
+        return new Vector2(Random.Range(_spawnPositionTransform.position.x, _spawnPositionTransform.position.x+ _distanceFromPos.x)
+           , Random.Range(_spawnPositionTransform.position.y, _spawnPositionTransform.position.y + _distanceFromPos.y) );
     }
     protected float GetRandomDelayBetweenSecondsInRange()
     {
@@ -128,10 +136,10 @@ public class AstroidSpawner : MonoBehaviour
     private void OnDrawGizmos()
     {
 
-        Gizmos.DrawLine(_spawnPosition, _spawnPosition+ _distanceFromPos.x* Vector3.right);
-        Gizmos.DrawLine(_spawnPosition, _spawnPosition+ _distanceFromPos.y* Vector3.up);
-        Gizmos.DrawLine(_spawnPosition + _distanceFromPos.x * Vector3.right, _spawnPosition+ _distanceFromPos);
-        Gizmos.DrawLine(_spawnPosition + _distanceFromPos.y * Vector3.up, _spawnPosition + _distanceFromPos);
+        Gizmos.DrawLine(transform.position, transform.position+ _distanceFromPos.x* Vector3.right);
+        Gizmos.DrawLine(transform.position, transform.position+ _distanceFromPos.y* Vector3.up);
+        Gizmos.DrawLine(transform.position + _distanceFromPos.x * Vector3.right, transform.position+ _distanceFromPos);
+        Gizmos.DrawLine(transform.position + _distanceFromPos.y * Vector3.up, transform.position + _distanceFromPos);
 
     }
 

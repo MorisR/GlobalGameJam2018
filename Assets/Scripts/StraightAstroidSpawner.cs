@@ -22,7 +22,10 @@ public class StraightAstroidSpawner: AstroidSpawner
         }
     }
 
-
-
-
+    protected override void Update()
+    {
+        base.Update();
+        if(Input.GetKeyDown(KeyCode.X))
+            StartSpawn();
+    }
 }
