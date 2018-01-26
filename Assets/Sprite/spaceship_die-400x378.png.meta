@@ -1,0 +1,844 @@
+fileFormatVersion: 2
+guid: 6e07c966a60e4d34a8faaf59f925c52e
+timeCreated: 1517010495
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spaceship_die-400x378_0
+    21300002: spaceship_die-400x378_1
+    21300004: spaceship_die-400x378_2
+    21300006: spaceship_die-400x378_3
+    21300008: spaceship_die-400x378_4
+    21300010: spaceship_die-400x378_5
+    21300012: spaceship_die-400x378_6
+    21300014: spaceship_die-400x378_7
+    21300016: spaceship_die-400x378_8
+    21300018: spaceship_die-400x378_9
+    21300020: spaceship_die-400x378_10
+    21300022: spaceship_die-400x378_11
+    21300024: spaceship_die-400x378_12
+    21300026: spaceship_die-400x378_13
+    21300028: spaceship_die-400x378_14
+    21300030: spaceship_die-400x378_15
+    21300032: spaceship_die-400x378_16
+    21300034: spaceship_die-400x378_17
+    21300036: spaceship_die-400x378_18
+    21300038: spaceship_die-400x378_19
+    21300040: spaceship_die-400x378_20
+    21300042: spaceship_die-400x378_21
+    21300044: spaceship_die-400x378_22
+    21300046: spaceship_die-400x378_23
+    21300048: spaceship_die-400x378_24
+    21300050: spaceship_die-400x378_25
+    21300052: spaceship_die-400x378_26
+    21300054: spaceship_die-400x378_27
+    21300056: spaceship_die-400x378_28
+    21300058: spaceship_die-400x378_29
+    21300060: spaceship_die-400x378_30
+    21300062: spaceship_die-400x378_31
+    21300064: spaceship_die-400x378_32
+    21300066: spaceship_die-400x378_33
+    21300068: spaceship_die-400x378_34
+    21300070: spaceship_die-400x378_35
+    21300072: spaceship_die-400x378_36
+    21300074: spaceship_die-400x378_37
+    21300076: spaceship_die-400x378_38
+    21300078: spaceship_die-400x378_39
+    21300080: spaceship_die-400x378_40
+    21300082: spaceship_die-400x378_41
+    21300084: spaceship_die-400x378_42
+    21300086: spaceship_die-400x378_43
+    21300088: spaceship_die-400x378_44
+    21300090: spaceship_die-400x378_45
+    21300092: spaceship_die-400x378_46
+    21300094: spaceship_die-400x378_47
+    21300096: spaceship_die-400x378_48
+    21300098: spaceship_die-400x378_49
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spaceship_die-400x378_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1670
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1670
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_2
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1670
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1670
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_4
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1670
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_5
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1670
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_6
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1670
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_7
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1670
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_8
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1670
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_9
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1670
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1292
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_11
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1292
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_12
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1292
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_13
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1292
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_14
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1292
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_15
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1292
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1292
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_17
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1292
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_18
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1292
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_19
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1292
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 914
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_21
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 914
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 914
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_23
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 914
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_24
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 914
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_25
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 914
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_26
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 914
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_27
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 914
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_28
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 914
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_29
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 914
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 536
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_31
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 536
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_32
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 536
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_33
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 536
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_34
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 536
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_35
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 536
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_36
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 536
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_37
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 536
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_38
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 536
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_39
+      rect:
+        serializedVersion: 2
+        x: 3602
+        y: 536
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_41
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 158
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_42
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 158
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_43
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 158
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_44
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 158
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_45
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 158
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_46
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 158
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_47
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 158
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_48
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 158
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship_die-400x378_49
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 158
+        width: 400
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
