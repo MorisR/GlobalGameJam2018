@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class GameInstance : MonoBehaviour
+public class GameInstance : Events.Tools.MonoBehaviour_EventManagerBase
 {
     [SerializeField]private Collider2D collider;
 
