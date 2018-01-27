@@ -325,6 +325,8 @@
     <Compile Include="Assets\Scripts\SpriteRotator.cs" />
     <Compile Include="Assets\Scripts\StayOnScreen.cs" />
     <Compile Include="Assets\Scripts\UI_Dimmer_Over_Player.cs" />
+    <Compile Include="Assets\Scripts\WavesManger.cs" />
+    <Compile Include="Assets\StopPlantMovment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Events Manager\FoldersToFind\others_eventsPlugin\EventsManager.xml" />

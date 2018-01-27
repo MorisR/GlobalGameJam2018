@@ -8,6 +8,7 @@ TagManager:
   - AstroidDestroyer
   - UI
   - Pizza
+  - EndPlanet
   layers:
   - Default
   - TransparentFX
