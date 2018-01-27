@@ -1,0 +1,514 @@
+fileFormatVersion: 2
+guid: 03a5a798bc926c24ea9482b9960378e7
+timeCreated: 1517018404
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: end-planet-61x138_0
+    21300002: end-planet-61x138_1
+    21300004: end-planet-61x138_2
+    21300006: end-planet-61x138_3
+    21300008: end-planet-61x138_4
+    21300010: end-planet-61x138_5
+    21300012: end-planet-61x138_6
+    21300014: end-planet-61x138_7
+    21300016: end-planet-61x138_8
+    21300018: end-planet-61x138_9
+    21300020: end-planet-61x138_10
+    21300022: end-planet-61x138_11
+    21300024: end-planet-61x138_12
+    21300026: end-planet-61x138_13
+    21300028: end-planet-61x138_14
+    21300030: end-planet-61x138_15
+    21300032: end-planet-61x138_16
+    21300034: end-planet-61x138_17
+    21300036: end-planet-61x138_18
+    21300038: end-planet-61x138_19
+    21300040: end-planet-61x138_20
+    21300042: end-planet-61x138_21
+    21300044: end-planet-61x138_22
+    21300046: end-planet-61x138_23
+    21300048: end-planet-61x138_24
+    21300050: end-planet-61x138_25
+    21300052: end-planet-61x138_26
+    21300054: end-planet-61x138_27
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: end-planet-61x138_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_4
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_5
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_6
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_7
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_8
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_9
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_10
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_11
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_12
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_13
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_14
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_15
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 374
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 236
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_17
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 236
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_18
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 236
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_19
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 236
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_20
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 236
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_21
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 236
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_22
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 236
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_23
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 236
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_24
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 236
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_25
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 236
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_26
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 236
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: end-planet-61x138_27
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 236
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
