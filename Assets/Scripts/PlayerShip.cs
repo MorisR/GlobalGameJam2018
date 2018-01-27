@@ -11,7 +11,7 @@ public class PlayerShip : Events.Tools.MonoBehaviour_EventManagerBase ,Events.Gr
     [SerializeField] float currentTimeSampleIvisibility;
     [SerializeField] float invisibilityDuration;
     [SerializeField] Animator shipAnimator;
-    [SerializeField] Animator hurtAnimator;
+    [SerializeField] public Animator hurtAnimator;
 
     Color shipInitialColor;
 
@@ -39,7 +39,6 @@ public class PlayerShip : Events.Tools.MonoBehaviour_EventManagerBase ,Events.Gr
         {
             Events.Groups.Player.Invoke.OnDie();
 
-            //todo play palyer die animaation
             shipAnimator.SetTrigger("OnDieTrigger");
             hurtAnimator.SetTrigger("OnDieTrigger");
 
@@ -61,9 +60,8 @@ public class PlayerShip : Events.Tools.MonoBehaviour_EventManagerBase ,Events.Gr
            // hurtAnimator.SetTrigger("OnHitTrigger");
         }
 
-            if (Input.GetKeyDown((KeyCode.Z)))
-	            Events.Groups.Astroid.Invoke.FlyAwayFromPlayer(transform.position,20f);
-
+        if (Input.GetKeyDown((KeyCode.Z)))
+	        Events.Groups.Astroid.Invoke.FlyAwayFromPlayer(transform.position,20f);
 
     }
 

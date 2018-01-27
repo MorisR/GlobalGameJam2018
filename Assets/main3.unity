@@ -152,10 +152,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 1362014850736614, guid: b07f2732365e5e14b8da09c1d3bfbe50, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b07f2732365e5e14b8da09c1d3bfbe50, type: 2}
   m_IsPrefabParent: 0
@@ -247,11 +243,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4358076062903324, guid: eb6d689642758d44fb30ceea06c9ee2f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4358076062903324, guid: eb6d689642758d44fb30ceea06c9ee2f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.06
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4358076062903324, guid: eb6d689642758d44fb30ceea06c9ee2f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -713,11 +709,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114524617168120938, guid: fcd822633cb2a5343a20e05b1c296ff4,
-        type: 2}
-      propertyPath: _astrodiPrefabs.Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 4716214583221368, guid: fcd822633cb2a5343a20e05b1c296ff4, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.48268497
@@ -750,36 +741,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 114524617168120938, guid: fcd822633cb2a5343a20e05b1c296ff4,
-        type: 2}
-      propertyPath: _astrodiPrefabs.Array.data[0]
-      value: 
-      objectReference: {fileID: 1844560043374784, guid: 4e94811ffed07ae45ae26ab6fb4bb0c7,
-        type: 2}
-    - target: {fileID: 114524617168120938, guid: fcd822633cb2a5343a20e05b1c296ff4,
-        type: 2}
-      propertyPath: _astrodiPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 1844560043374784, guid: 814f2f03d8372014e828ac021cde3216,
-        type: 2}
-    - target: {fileID: 114524617168120938, guid: fcd822633cb2a5343a20e05b1c296ff4,
-        type: 2}
-      propertyPath: _astrodiPrefabs.Array.data[2]
-      value: 
-      objectReference: {fileID: 1844560043374784, guid: 57d969a0c6177534c855f1500218a05f,
-        type: 2}
-    - target: {fileID: 114524617168120938, guid: fcd822633cb2a5343a20e05b1c296ff4,
-        type: 2}
-      propertyPath: _astrodiPrefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 1844560043374784, guid: 47256e8e66ff5ae419e1db0661a6a873,
-        type: 2}
-    - target: {fileID: 114524617168120938, guid: fcd822633cb2a5343a20e05b1c296ff4,
-        type: 2}
-      propertyPath: _astrodiPrefabs.Array.data[4]
-      value: 
-      objectReference: {fileID: 1844560043374784, guid: 47256e8e66ff5ae419e1db0661a6a873,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcd822633cb2a5343a20e05b1c296ff4, type: 2}
   m_IsPrefabParent: 0
@@ -843,10 +804,6 @@ Prefab:
     - target: {fileID: 4380689279095730, guid: d42417aa5252dbc49bcdda4a211e0b50, type: 2}
       propertyPath: m_RootOrder
       value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621613472134926, guid: d42417aa5252dbc49bcdda4a211e0b50, type: 2}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d42417aa5252dbc49bcdda4a211e0b50, type: 2}
@@ -1003,10 +960,6 @@ Prefab:
     - target: {fileID: 4349248098369630, guid: be57473835a54ec43b43f200eb6da74a, type: 2}
       propertyPath: m_RootOrder
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1228256939018138, guid: be57473835a54ec43b43f200eb6da74a, type: 2}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be57473835a54ec43b43f200eb6da74a, type: 2}

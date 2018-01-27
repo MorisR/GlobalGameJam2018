@@ -240,7 +240,7 @@ MonoBehaviour:
   acceleration: 1
   decelertion: 3
   minSpeed: 2
-  maxSpeed: 10
+  maxSpeed: 7
   movedObject: {fileID: 50854770565972126}
   isMovmentEnabled: 1
 --- !u!114 &114074947488579592
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMovementEnabled: 0
   isAbillitiesEnabled: 0
-  maxHP: 100
+  maxHP: 3
   currentHP: 100
   currentTimeSampleIvisibility: 0
   invisibilityDuration: 3

@@ -6,10 +6,13 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour {
 
     static LevelManager _instance;
+
     public static LevelManager Instance
     {
         get
         {
+            if (_instance == null)
+                _instance = new LevelManager();
             return _instance;
         }
     }
@@ -24,12 +27,8 @@ public class LevelManager : MonoBehaviour {
   
     // Use this for initialization
     void Start () {
-        GameObject.DontDestroyOnLoad(this);
-        if (_instance != null)
-            Destroy(gameObject);
-        else _instance = this;
 	}
-	
+
 
 
 
