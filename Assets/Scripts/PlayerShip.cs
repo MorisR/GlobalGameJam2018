@@ -80,9 +80,27 @@ public class PlayerShip : Events.Tools.MonoBehaviour_EventManagerBase ,Events.Gr
                 print("BOOM!!");
             }
 
+        }
+        if (collision.tag == "EndPlanet")
+            LevelManager.Instance.LoadScene("Credits");
+
+        if (collision.tag == "Pizza")
+        {
+            Events.Groups.Level.Invoke.OnLevelStart();
+            collision.gameObject.SetActive(false);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "EndPlanet")
+            LevelManager.Instance.LoadScene("Credits");
+        if (collision.gameObject.tag == "Pizza")
+        {
+            Events.Groups.Level.Invoke.OnLevelStart();
+            collision.gameObject.SetActive(false);
         }
     }
-
 
     public void OnDashAvailable()
     {
