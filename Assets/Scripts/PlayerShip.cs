@@ -26,11 +26,25 @@ public class PlayerShip : MonoBehaviour {
 
     public void OnHit()
     {
-        currentHP--;
-        Events.Groups.Player.Invoke.OnHit(currentHP);
-        currentTimeSampleIvisibility = Time.time;
-        hurtAnimator.SetTrigger("OnHitTrigger");
-        shipAnimator.SetBool("OnHit", true);
+
+        if (currentHP > 0)
+        {
+            currentHP--;
+            currentTimeSampleIvisibility = Time.time;
+            hurtAnimator.SetTrigger("OnHitTrigger");
+            shipAnimator.SetBool("OnHit", true);
+            Events.Groups.Player.Invoke.OnHit(currentHP);
+        }
+        if (currentHP == 0)
+        {
+            Events.Groups.Player.Invoke.OnDie();
+
+            //todo play palyer die animaation
+            shipAnimator.SetTrigger("OnDieTrigger");
+            hurtAnimator.SetTrigger("OnDieTrigger");
+
+        }
+
     }
 
     public void UseAbilty(int index)
@@ -69,5 +83,8 @@ public class PlayerShip : MonoBehaviour {
 
         }
     }
+
+
+
 
 }

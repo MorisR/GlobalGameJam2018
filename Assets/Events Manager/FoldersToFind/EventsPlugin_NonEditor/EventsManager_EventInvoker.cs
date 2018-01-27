@@ -82,9 +82,11 @@ _users_IOnResume.ForEach(x=> x.OnResume());
 }namespace Player {
 namespace Methods {
 public interface IOnHit_Int32 : Tools.IEventMethodBase{ void OnHit(System.Int32 currentPlayerHp); }
+public interface IOnDie : Tools.IEventMethodBase{ void OnDie(); }
 
 }public static class Invoke {
 static List<Methods.IOnHit_Int32> _users_IOnHit_Int32  = new List<Methods.IOnHit_Int32>();
+static List<Methods.IOnDie> _users_IOnDie  = new List<Methods.IOnDie>();
 internal static void RegisterUser(Methods.IOnHit_Int32 user){
 if(user == null) return;
 if(!_users_IOnHit_Int32.Contains(user)) _users_IOnHit_Int32.Add(user);
@@ -96,8 +98,19 @@ if(_users_IOnHit_Int32.Contains(user)) _users_IOnHit_Int32.Remove(user);
 public static void OnHit(System.Int32 currentPlayerHp){
 _users_IOnHit_Int32.ForEach(x=> x.OnHit(currentPlayerHp));   
 }
+internal static void RegisterUser(Methods.IOnDie user){
+if(user == null) return;
+if(!_users_IOnDie.Contains(user)) _users_IOnDie.Add(user);
+}
+internal static void UnRegisterUser(Methods.IOnDie user){
+if(user == null) return;
+if(_users_IOnDie.Contains(user)) _users_IOnDie.Remove(user);
+}
+public static void OnDie(){
+_users_IOnDie.ForEach(x=> x.OnDie());   
+}
 
-}public interface IAll_Group_Events:Methods.IOnHit_Int32{ }
+}public interface IAll_Group_Events:Methods.IOnHit_Int32,Methods.IOnDie{ }
 
 }
 }
@@ -116,6 +129,8 @@ if(user is Groups.Pausable.Methods.IOnResume)
 	Groups.Pausable.Invoke.RegisterUser(user as Groups.Pausable.Methods.IOnResume);
 if(user is Groups.Player.Methods.IOnHit_Int32)
 	Groups.Player.Invoke.RegisterUser(user as Groups.Player.Methods.IOnHit_Int32);
+if(user is Groups.Player.Methods.IOnDie)
+	Groups.Player.Invoke.RegisterUser(user as Groups.Player.Methods.IOnDie);
 
 }static partial void UnRegesterUserImplementation(object user)  {
 if(!(user is Tools.IEventMethodBase))return; if(user is Groups.Resetable.Methods.IResetInstance)
@@ -128,6 +143,8 @@ if(user is Groups.Pausable.Methods.IOnResume)
 	Groups.Pausable.Invoke.UnRegisterUser(user as Groups.Pausable.Methods.IOnResume);
 if(user is Groups.Player.Methods.IOnHit_Int32)
 	Groups.Player.Invoke.UnRegisterUser(user as Groups.Player.Methods.IOnHit_Int32);
+if(user is Groups.Player.Methods.IOnDie)
+	Groups.Player.Invoke.UnRegisterUser(user as Groups.Player.Methods.IOnDie);
 
 }
 }

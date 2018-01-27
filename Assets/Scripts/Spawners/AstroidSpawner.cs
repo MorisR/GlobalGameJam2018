@@ -30,11 +30,6 @@ public class AstroidSpawner : MonoBehaviour
     [SerializeField] protected List<Astroid> _astroidInstances;
 
 
-    public virtual void RemoveAstroids()
-    {
-        //todo create an event that all the asteroids implement 
-
-    }
     public virtual void StartSpawn()
     {
         isSpawning = true;
