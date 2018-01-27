@@ -353,6 +353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movie: {fileID: 15200000, guid: a948988975da5234d82b7c9631981754, type: 3}
+  sceneToLoad: 
 --- !u!114 &765982734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,7 +441,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -464,7 +465,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!1 &783670253
 GameObject:
   m_ObjectHideFlags: 0

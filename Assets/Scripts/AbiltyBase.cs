@@ -13,6 +13,8 @@ public class AbiltyBase : Events.Tools.MonoBehaviour_EventManagerBase, Events.Gr
     float coolDownTimeSimple;
     protected PlayerShip ship;
 
+    private bool isReadyVisualShown;
+
     public virtual void Use()
     {
         if (IsAvailbale && !isPaused)
@@ -35,6 +37,8 @@ public class AbiltyBase : Events.Tools.MonoBehaviour_EventManagerBase, Events.Gr
         }
     }
 
+
+
     // Use this for initialization
     protected virtual void Start () {
         ship=GetComponent<PlayerShip>();
@@ -48,7 +52,19 @@ public class AbiltyBase : Events.Tools.MonoBehaviour_EventManagerBase, Events.Gr
         {
             coolDownTimeSimple = Time.time - tempTimeSimple;
         }
-	}
+
+        if (IsAvailbale && !isReadyVisualShown)
+        {
+            isReadyVisualShown = true;
+            ShowVisuals();
+        }
+
+    }
+
+    public virtual void ShowVisuals()
+    {
+        
+    }
 
     protected bool isPaused;
     float tempTimeSimple;
@@ -62,6 +78,6 @@ public class AbiltyBase : Events.Tools.MonoBehaviour_EventManagerBase, Events.Gr
     public void OnResume()
     {
         isPaused = false;
-        tempTimeSimple = 0;
+        //tempTimeSimple = 0;
     }
 }
