@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -88,7 +88,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -232,7 +231,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &242002006
 Prefab:
@@ -271,15 +270,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4358076062903324, guid: eb6d689642758d44fb30ceea06c9ee2f, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114992279696119348, guid: eb6d689642758d44fb30ceea06c9ee2f,
         type: 2}
       propertyPath: hurtAnimator
       value: 
       objectReference: {fileID: 1153544655}
-    m_RemovedComponents:
-    - {fileID: 114961613888605218, guid: eb6d689642758d44fb30ceea06c9ee2f, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb6d689642758d44fb30ceea06c9ee2f, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &408526205 stripped
@@ -897,7 +895,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4392053433078106, guid: 295469744d865124688d14c76ec5a759, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 212335181712418730, guid: 295469744d865124688d14c76ec5a759,
         type: 2}
@@ -1033,7 +1031,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -1049,7 +1046,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1770189212
 Prefab:
