@@ -1,9 +1,24 @@
 fileFormatVersion: 2
 guid: accd32aba9597ec4f9e24623b77b8169
-timeCreated: 1517008034
+timeCreated: 1517040332
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: spaceship-tele-in_156x156_0
+    21300002: spaceship-tele-in_156x156_1
+    21300004: spaceship-tele-in_156x156_2
+    21300006: spaceship-tele-in_156x156_3
+    21300008: spaceship-tele-in_156x156_4
+    21300010: spaceship-tele-in_156x156_5
+    21300012: spaceship-tele-in_156x156_6
+    21300014: spaceship-tele-in_156x156_7
+    21300016: spaceship-tele-in_156x156_8
+    21300018: spaceship-tele-in_156x156_9
+    21300020: spaceship-tele-in_156x156_10
+    21300022: spaceship-tele-in_156x156_11
+    21300024: spaceship-tele-in_156x156_12
+    21300026: spaceship-tele-in_156x156_13
+    21300028: spaceship-tele-in_156x156_14
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -85,7 +100,217 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spaceship-tele-in_156x156_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 356
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship-tele-in_156x156_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 356
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship-tele-in_156x156_2
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 356
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship-tele-in_156x156_3
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 356
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship-tele-in_156x156_4
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 356
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship-tele-in_156x156_5
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 356
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship-tele-in_156x156_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship-tele-in_156x156_7
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 200
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship-tele-in_156x156_8
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 200
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship-tele-in_156x156_9
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 200
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship-tele-in_156x156_10
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 200
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship-tele-in_156x156_11
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 200
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship-tele-in_156x156_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 44
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship-tele-in_156x156_13
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 44
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceship-tele-in_156x156_14
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 45
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

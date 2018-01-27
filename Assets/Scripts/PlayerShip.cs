@@ -47,11 +47,6 @@ public class PlayerShip : MonoBehaviour {
 
     }
 
-    public void UseAbilty(int index)
-    {
-
-    }
-
     // Use this for initialization
     void Start ()
     {

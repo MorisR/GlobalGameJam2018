@@ -20,7 +20,10 @@ public class ShipBlinkAbility : AbiltyBase
     [SerializeField] float shadowDistanceScale;
     float shadowDistance = 0f;
 
+    [SerializeField] Animator shipAnimator;
 
+    Vector3 blinkTarget;
+    bool isBlinking = false;
 
     public void ShowShadow()
     {
@@ -41,9 +44,10 @@ public class ShipBlinkAbility : AbiltyBase
 
 
         if (Input.GetButtonDown("Blink"))
-           
-                Use();
-
+        {
+            blinkTarget = shadowSpriteTransform.position;
+            shipAnimator.SetTrigger("OnBlinkTrigger");
+        }
     }
 
     public void HideShadow()
@@ -72,6 +76,15 @@ public class ShipBlinkAbility : AbiltyBase
         }
         else HideShadow();
 
+        if (shipAnimator.GetCurrentAnimatorStateInfo(0).IsName("ship_blink_end") && !isBlinking)
+        {
+            isBlinking = true;
+            Use();
+        }
+
+        if (!(shipAnimator.GetCurrentAnimatorStateInfo(0).IsName("ship_blink_end") ||
+            shipAnimator.GetCurrentAnimatorStateInfo(0).IsName("ship_blink_start")))
+            isBlinking = false;
     }
 
     public static float Angle(Vector2 p_vector2)
@@ -90,6 +103,6 @@ public class ShipBlinkAbility : AbiltyBase
     {
         base.Use();
         if (!isPaused)
-            ship.transform.position = shadowSpriteTransform.position;
+            ship.transform.position = blinkTarget;
     }
 }
