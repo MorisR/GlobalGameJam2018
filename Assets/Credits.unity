@@ -297,7 +297,7 @@ RectTransform:
   m_GameObject: {fileID: 1115147545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.017152658, y: 0.017152658, z: 0.017152658}
+  m_LocalScale: {x: 0.015540016, y: 0.015540016, z: 0.015540016}
   m_Children:
   - {fileID: 2023289613}
   - {fileID: 1710108638}
@@ -535,16 +535,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1710108637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: -1.1000061, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1115147549}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: -1.1}
-  m_SizeDelta: {x: 590.4, y: 561.8}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 590.4, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1710108639
 MonoBehaviour:
@@ -598,7 +598,7 @@ MonoBehaviour:
 
     Mor Ohana
 
-    Morris Raphael
+    Moris Rafol
 
     Moshe Rubin
 
@@ -635,16 +635,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023289612}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0999756, y: -1.2000122, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1115147549}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1, y: -1.2}
-  m_SizeDelta: {x: 1035.9, y: 582}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2023289614
 MonoBehaviour:
@@ -665,7 +665,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 984f2e0e010a1594a8243d095f99fbab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: db747419d0c90634d88ea117431c8431, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

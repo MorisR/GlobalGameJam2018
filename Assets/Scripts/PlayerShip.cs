@@ -84,7 +84,7 @@ public class PlayerShip : Events.Tools.MonoBehaviour_EventManagerBase ,Events.Gr
 
         }
         if (collision.tag == "EndPlanet")
-            LevelManager.Instance.LoadScene("Credits");
+            LevelManager.Instance.LoadScene("Win");
 
         if (collision.tag == "Pizza")
         {
