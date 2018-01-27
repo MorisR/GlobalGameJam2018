@@ -6,6 +6,8 @@ using UnityEngine;
 public class ShipMovment : Events.Tools.MonoBehaviour_EventManagerBase, Events.Groups.Pausable.IAll_Group_Events
 {
 
+
+
     [Header("speed properties")]
     [SerializeField] float acceleration;
     [SerializeField] float decelertion;
@@ -23,26 +25,9 @@ public class ShipMovment : Events.Tools.MonoBehaviour_EventManagerBase, Events.G
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        //horizontal = Input.GetAxis("HorizontalController");
-        //vertical = Input.GetAxis("VerticalController");
-
-
         direction.Set(horizontal, vertical);
         direction = direction.normalized;
-        /*
-
-            if (currnetSpeed.sqrMagnitude < maxSpeed* maxSpeed)
-                currnetSpeed += acceleration * direction*Time.deltaTime;
-            else currnetSpeed = direction*maxSpeed;
-
-
-            if (currnetSpeed.sqrMagnitude > 0)
-                currnetSpeed -= decelertion * direction * Time.deltaTime;
-
-            else currnetSpeed =  Vector2.zero;
-
-        */
-
+  
         if(Input.GetButton("Horizontal") || Input.GetButton("Vertical" ))
             if (currnetSpeed < maxSpeed)
                 currnetSpeed += acceleration;
@@ -62,6 +47,9 @@ public class ShipMovment : Events.Tools.MonoBehaviour_EventManagerBase, Events.G
 
     }
 
+
+
+
     // Use this for initialization
     void Start () {
 		
@@ -71,7 +59,22 @@ public class ShipMovment : Events.Tools.MonoBehaviour_EventManagerBase, Events.G
 	void Update () {
         if(isMovmentEnabled && !isPaused)
         Move();
+    
+        
+
 	}
+    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "EndPlanet")      
+            LevelManager.Instance.LoadScene("Credits");
+
+        if (collision.tag == "Pizza")
+        {
+            Events.Groups.Level.Invoke.OnLevelStart();
+            collision.gameObject.SetActive(false);
+        }
+    }
 
     float oldSpeed;
     bool isPaused;

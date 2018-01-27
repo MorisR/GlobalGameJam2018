@@ -5,21 +5,30 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
-   // public List<Wave> waves;  
+    static LevelManager _instance;
 
-    public void LoadMainScene()
+    public static LevelManager Instance
     {
-        SceneManager.LoadScene("main2");
+        get
+        {
+            return _instance;
+        }
     }
 
-    public void LoadCredScene()
+    // public List<Wave> waves;  
+
+    public void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene("Credits");
+        SceneManager.LoadScene(sceneName);
     }
 
+  
     // Use this for initialization
     void Start () {
         GameObject.DontDestroyOnLoad(this);
+        if (_instance != null)
+            Destroy(gameObject);
+        else _instance = this;
 	}
 	
 	// Update is called once per frame

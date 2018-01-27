@@ -115,9 +115,11 @@ _users_IOnDie.ForEach(x=> x.OnDie());
 }namespace Level {
 namespace Methods {
 public interface IOnLevelEnd : Tools.IEventMethodBase{ void OnLevelEnd(); }
+public interface IOnLevelStart : Tools.IEventMethodBase{ void OnLevelStart(); }
 
 }public static class Invoke {
 static List<Methods.IOnLevelEnd> _users_IOnLevelEnd  = new List<Methods.IOnLevelEnd>();
+static List<Methods.IOnLevelStart> _users_IOnLevelStart  = new List<Methods.IOnLevelStart>();
 internal static void RegisterUser(Methods.IOnLevelEnd user){
 if(user == null) return;
 if(!_users_IOnLevelEnd.Contains(user)) _users_IOnLevelEnd.Add(user);
@@ -129,8 +131,19 @@ if(_users_IOnLevelEnd.Contains(user)) _users_IOnLevelEnd.Remove(user);
 public static void OnLevelEnd(){
 _users_IOnLevelEnd.ForEach(x=> x.OnLevelEnd());   
 }
+internal static void RegisterUser(Methods.IOnLevelStart user){
+if(user == null) return;
+if(!_users_IOnLevelStart.Contains(user)) _users_IOnLevelStart.Add(user);
+}
+internal static void UnRegisterUser(Methods.IOnLevelStart user){
+if(user == null) return;
+if(_users_IOnLevelStart.Contains(user)) _users_IOnLevelStart.Remove(user);
+}
+public static void OnLevelStart(){
+_users_IOnLevelStart.ForEach(x=> x.OnLevelStart());   
+}
 
-}public interface IAll_Group_Events:Methods.IOnLevelEnd{ }
+}public interface IAll_Group_Events:Methods.IOnLevelEnd,Methods.IOnLevelStart{ }
 
 }
 }
@@ -153,6 +166,8 @@ if(user is Groups.Player.Methods.IOnDie)
 	Groups.Player.Invoke.RegisterUser(user as Groups.Player.Methods.IOnDie);
 if(user is Groups.Level.Methods.IOnLevelEnd)
 	Groups.Level.Invoke.RegisterUser(user as Groups.Level.Methods.IOnLevelEnd);
+if(user is Groups.Level.Methods.IOnLevelStart)
+	Groups.Level.Invoke.RegisterUser(user as Groups.Level.Methods.IOnLevelStart);
 
 }static partial void UnRegesterUserImplementation(object user)  {
 if(!(user is Tools.IEventMethodBase))return; if(user is Groups.Resetable.Methods.IResetInstance)
@@ -169,6 +184,8 @@ if(user is Groups.Player.Methods.IOnDie)
 	Groups.Player.Invoke.UnRegisterUser(user as Groups.Player.Methods.IOnDie);
 if(user is Groups.Level.Methods.IOnLevelEnd)
 	Groups.Level.Invoke.UnRegisterUser(user as Groups.Level.Methods.IOnLevelEnd);
+if(user is Groups.Level.Methods.IOnLevelStart)
+	Groups.Level.Invoke.UnRegisterUser(user as Groups.Level.Methods.IOnLevelStart);
 
 }
 }

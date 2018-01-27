@@ -27,6 +27,8 @@ public class Wave : MonoBehaviour
             {
                 if (false /*todo: is paused*/) yield return StartCoroutine(WaitUntilEnabled());
 
+                if (_waves[i] == null) continue;
+
                 _waves[i].Spawner.StartSpawn();
                 yield return new WaitForSeconds(_waves[i].Delay);
             }
@@ -46,9 +48,6 @@ public class Wave : MonoBehaviour
 
     protected virtual void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.B))
-            StartWave();
 
     }
 

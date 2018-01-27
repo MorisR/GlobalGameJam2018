@@ -55,12 +55,8 @@ public class AstroidSpawner : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update ()
 	{
-	    Spawn();
-        if (Input.GetKeyDown(KeyCode.X))
-            StartSpawn();
-        if (Input.GetKeyDown(KeyCode.C))
-            ResetAndStopSpawn();
-
+        _astrodiPrefabs = _astrodiPrefabs.Where(x => x != null).ToList();
+        Spawn();
     }
 
     protected virtual bool Spawn()

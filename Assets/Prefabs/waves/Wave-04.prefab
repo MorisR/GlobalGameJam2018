@@ -1581,7 +1581,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _astrodiPrefabs:
-  - {fileID: 0}
   - {fileID: 1844560043374784, guid: 4e94811ffed07ae45ae26ab6fb4bb0c7, type: 2}
   - {fileID: 1844560043374784, guid: 814f2f03d8372014e828ac021cde3216, type: 2}
   - {fileID: 1844560043374784, guid: 57d969a0c6177534c855f1500218a05f, type: 2}
@@ -1719,12 +1718,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _astrodiPrefabs:
-  - {fileID: 0}
   - {fileID: 1844560043374784, guid: 4e94811ffed07ae45ae26ab6fb4bb0c7, type: 2}
   - {fileID: 1844560043374784, guid: 814f2f03d8372014e828ac021cde3216, type: 2}
   - {fileID: 1844560043374784, guid: 57d969a0c6177534c855f1500218a05f, type: 2}
   - {fileID: 1844560043374784, guid: 41d9f40df2bc268499d256a987c51fad, type: 2}
   - {fileID: 1844560043374784, guid: 47256e8e66ff5ae419e1db0661a6a873, type: 2}
+  - {fileID: 1844560043374784, guid: f2a647b5c9a0ef64d91b8ae9c8322b21, type: 2}
   _spawnCount: 3
   _astroidSpeedRange: {x: 3, y: 10}
   _delayBwtweenSpawns: {x: 1.5, y: 1.5}
@@ -1766,12 +1765,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _astrodiPrefabs:
-  - {fileID: 0}
   - {fileID: 1844560043374784, guid: 4e94811ffed07ae45ae26ab6fb4bb0c7, type: 2}
   - {fileID: 1844560043374784, guid: 814f2f03d8372014e828ac021cde3216, type: 2}
   - {fileID: 1844560043374784, guid: 57d969a0c6177534c855f1500218a05f, type: 2}
   - {fileID: 1844560043374784, guid: 41d9f40df2bc268499d256a987c51fad, type: 2}
   - {fileID: 1844560043374784, guid: 47256e8e66ff5ae419e1db0661a6a873, type: 2}
+  - {fileID: 1844560043374784, guid: f2a647b5c9a0ef64d91b8ae9c8322b21, type: 2}
   _spawnCount: 2
   _astroidSpeedRange: {x: 3, y: 10}
   _delayBwtweenSpawns: {x: 1.5, y: 1}
@@ -1848,7 +1847,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _astrodiPrefabs:
-  - {fileID: 0}
   - {fileID: 1844560043374784, guid: 4e94811ffed07ae45ae26ab6fb4bb0c7, type: 2}
   - {fileID: 1844560043374784, guid: 814f2f03d8372014e828ac021cde3216, type: 2}
   - {fileID: 1844560043374784, guid: 57d969a0c6177534c855f1500218a05f, type: 2}
@@ -1926,7 +1924,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _astrodiPrefabs:
-  - {fileID: 0}
   - {fileID: 1844560043374784, guid: 4e94811ffed07ae45ae26ab6fb4bb0c7, type: 2}
   - {fileID: 1844560043374784, guid: 814f2f03d8372014e828ac021cde3216, type: 2}
   - {fileID: 1844560043374784, guid: 57d969a0c6177534c855f1500218a05f, type: 2}
@@ -1996,7 +1993,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _astrodiPrefabs:
-  - {fileID: 0}
   - {fileID: 1844560043374784, guid: 4e94811ffed07ae45ae26ab6fb4bb0c7, type: 2}
   - {fileID: 1844560043374784, guid: 814f2f03d8372014e828ac021cde3216, type: 2}
   - {fileID: 1844560043374784, guid: 57d969a0c6177534c855f1500218a05f, type: 2}
@@ -2096,7 +2092,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _astrodiPrefabs:
-  - {fileID: 0}
   - {fileID: 1844560043374784, guid: 4e94811ffed07ae45ae26ab6fb4bb0c7, type: 2}
   - {fileID: 1844560043374784, guid: 814f2f03d8372014e828ac021cde3216, type: 2}
   - {fileID: 1844560043374784, guid: 57d969a0c6177534c855f1500218a05f, type: 2}
@@ -2161,12 +2156,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _astrodiPrefabs:
-  - {fileID: 0}
   - {fileID: 1844560043374784, guid: 4e94811ffed07ae45ae26ab6fb4bb0c7, type: 2}
   - {fileID: 1844560043374784, guid: 814f2f03d8372014e828ac021cde3216, type: 2}
   - {fileID: 1844560043374784, guid: 57d969a0c6177534c855f1500218a05f, type: 2}
   - {fileID: 1844560043374784, guid: 41d9f40df2bc268499d256a987c51fad, type: 2}
   - {fileID: 1844560043374784, guid: 47256e8e66ff5ae419e1db0661a6a873, type: 2}
+  - {fileID: 1844560043374784, guid: f2a647b5c9a0ef64d91b8ae9c8322b21, type: 2}
   _spawnCount: 1
   _astroidSpeedRange: {x: 3, y: 10}
   _delayBwtweenSpawns: {x: 1.5, y: 1.5}

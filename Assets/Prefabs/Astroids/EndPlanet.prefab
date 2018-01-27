@@ -21,11 +21,10 @@ GameObject:
   - component: {fileID: 4656684635057600}
   - component: {fileID: 212627802797021608}
   - component: {fileID: 95152142089626880}
-  - component: {fileID: 114545283097479154}
-  - component: {fileID: 114568655512357042}
   - component: {fileID: 60811564277400178}
   - component: {fileID: 50799278829695246}
-  m_Layer: 0
+  - component: {fileID: 114465913335135730}
+  m_Layer: 9
   m_Name: EndPlanet
   m_TagString: EndPlanet
   m_Icon: {fileID: 0}
@@ -38,9 +37,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1704694928644834}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.27, y: -0.3, z: -0.03606322}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.48, y: 0.01776743, z: -0.03606322}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +73,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -129,34 +128,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114545283097479154
+--- !u!114 &114465913335135730
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1704694928644834}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52af20697fb313d4cb94aef8c351a6cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a10aab82906503499ac53072edbba5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collider: {fileID: 60811564277400178}
-  movedObject: {fileID: 4656684635057600}
-  direction: {x: 0, y: 0, z: 0}
-  speed: 0
---- !u!114 &114568655512357042
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1704694928644834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0f3b2c1476d5624a968db47bd6a01ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  instance: {fileID: 1704694928644834}
-  astroidMovementComponent: {fileID: 114545283097479154}
+  dirction: {x: -1, y: 0}
+  speed: 5
+  collisionTag: Stoper
 --- !u!212 &212627802797021608
 SpriteRenderer:
   m_ObjectHideFlags: 1
