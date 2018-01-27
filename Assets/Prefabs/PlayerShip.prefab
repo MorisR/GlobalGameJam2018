@@ -259,8 +259,9 @@ MonoBehaviour:
   currentFule: 0
   shadowHolderTransform: {fileID: 4605369830628448}
   shadowSpriteTransform: {fileID: 4717818387780048}
-  shadowDistanceMax: 0.5
+  shadowDistanceMax: 0.8
   shadowDistanceScale: 0.01
+  anim: {fileID: 95457419228430892}
 --- !u!114 &114338904947781110
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -319,11 +320,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMovementEnabled: 0
   isAbillitiesEnabled: 0
-  maxHP: 0
-  currentHP: 0
+  maxHP: 100
+  currentHP: 100
   currentTimeSampleIvisibility: 0
   invisibilityDuration: 3
   shipAnimator: {fileID: 95457419228430892}
+  hurtAnimator: {fileID: 0}
 --- !u!212 &212114751377890564
 SpriteRenderer:
   m_ObjectHideFlags: 1

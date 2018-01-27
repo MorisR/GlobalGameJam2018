@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovemntStopAtCollision : MonoBehaviour {
+public class MoveStopAtCollision :Events.Tools.MonoBehaviour_EventManagerBase ,Events.Groups.Pausable.IAll_Group_Events {
 
     public Vector2 dirction;
     public float speed;
@@ -30,12 +30,20 @@ public class MovemntStopAtCollision : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-
-        transform.position += (Vector3)dirction.normalized * speed * Time.deltaTime;
+        if(!isPaused)
+            transform.position += (Vector3)dirction.normalized * speed * Time.deltaTime;
 
     }
 
+    private bool isPaused;
+    public void OnPause()
+    {
+        isPaused = true;
+    }
 
+    public void OnResume()
+    {
+        isPaused = false;
 
-
+    }
 }

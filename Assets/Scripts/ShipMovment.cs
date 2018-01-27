@@ -76,18 +76,15 @@ public class ShipMovment : Events.Tools.MonoBehaviour_EventManagerBase, Events.G
         }
     }
 
-    float oldSpeed;
     bool isPaused;
     public void OnPause()
     {
         isPaused = true;
-        oldSpeed = currnetSpeed;
     }
 
     public void OnResume()
     {
         isPaused = false;
-        currnetSpeed = oldSpeed;
-        oldSpeed = 0;
+
     }
 }

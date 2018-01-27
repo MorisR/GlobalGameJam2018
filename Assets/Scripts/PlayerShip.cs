@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerShip : MonoBehaviour {
+public class PlayerShip : Events.Tools.MonoBehaviour_EventManagerBase ,Events.Groups.Player.Methods.IOnDashAvailable {
 
     [SerializeField] bool isMovementEnabled;
     [SerializeField] bool isAbillitiesEnabled;
@@ -47,10 +47,12 @@ public class PlayerShip : MonoBehaviour {
 
     }
 
+/* should use this method in case of multiple abilities
     public void UseAbilty(int index)
     {
 
     }
+*/
 
     // Use this for initialization
     void Start ()
@@ -67,7 +69,8 @@ public class PlayerShip : MonoBehaviour {
         }
 
             if (Input.GetKeyDown((KeyCode.Z)))
-	        Events.Groups.Astroid.Invoke.FlyAwayFromPlayer(transform.position,20f);
+	            Events.Groups.Astroid.Invoke.FlyAwayFromPlayer(transform.position,20f);
+
 
     }
 
@@ -85,6 +88,8 @@ public class PlayerShip : MonoBehaviour {
     }
 
 
-
-
+    public void OnDashAvailable()
+    {
+       this.shipAnimator.SetTrigger("IsAbilityReady");
+    }
 }

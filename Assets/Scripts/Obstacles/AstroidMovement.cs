@@ -4,7 +4,7 @@ using UnityEngine;
 
 using System;
 
-public class AstroidMovement : GameInstance,Events.Groups.Pausable.IAll_Group_Events
+public class AstroidMovement : Events.Tools.MonoBehaviour_EventManagerBase,Events.Groups.Pausable.IAll_Group_Events
 {
    [SerializeField] private Transform movedObject;
    [SerializeField] public Vector3 direction;

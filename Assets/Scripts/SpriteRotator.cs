@@ -21,27 +21,23 @@ public class SpriteRotator : Events.Tools.MonoBehaviour_EventManagerBase,Events.
         }
     }
 
-    float oldRotationSpeed;
+
+    private bool isPaused;
 
     public void OnPause()
     {
-        oldRotationSpeed = rotationSpeed;
-        rotationSpeed = 0;
+        isPaused = true;
     }
 
     public void OnResume()
     {
-        rotationSpeed = oldRotationSpeed;
-        oldRotationSpeed = 0;
+        isPaused = false;
     }
 
-    // Use this for initialization
-    void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	void Update () {
+        if(!isPaused)
         transform.eulerAngles += Vector3.forward * RotationSpeed * Time.deltaTime;
 	}
 

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class UI_Dimmer_Over_Player : MonoBehaviour {
-    [SerializeField]
-    SpriteRenderer UI_Sprite;
+
+    [SerializeField] SpriteRenderer UI_Sprite;
 
 
     Collider2D my_collider;

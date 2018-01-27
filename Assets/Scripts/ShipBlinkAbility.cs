@@ -18,6 +18,10 @@ public class ShipBlinkAbility : AbiltyBase
     [SerializeField] Transform shadowSpriteTransform;
     [SerializeField] float shadowDistanceMax;
     [SerializeField] float shadowDistanceScale;
+
+    [Space, Space, Header("Shadow Settings")]
+    [SerializeField] Animator anim;
+
     float shadowDistance = 0f;
 
 
@@ -40,8 +44,7 @@ public class ShipBlinkAbility : AbiltyBase
 
 
 
-        if (Input.GetButtonDown("Blink"))
-           
+        if (Input.GetButtonDown("Blink"))           
                 Use();
 
     }
@@ -62,6 +65,8 @@ public class ShipBlinkAbility : AbiltyBase
     {
         base.Update();
 
+
+
         if (IsAvailbale && !isPaused)
         {
             if (Input.GetButton("HorizontalShadow") || Input.GetButton("VerticalShadow"))
@@ -72,6 +77,11 @@ public class ShipBlinkAbility : AbiltyBase
         }
         else HideShadow();
 
+    }
+
+    public override void ShowVisuals()
+    {
+        anim.SetTrigger("OnAbilityReady");
     }
 
     public static float Angle(Vector2 p_vector2)
@@ -90,6 +100,8 @@ public class ShipBlinkAbility : AbiltyBase
     {
         base.Use();
         if (!isPaused)
+        {
             ship.transform.position = shadowSpriteTransform.position;
+        }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackgroundScroller : MonoBehaviour {
+public class BackgroundScroller : Events.Tools.MonoBehaviour_EventManagerBase  ,Events.Groups.Pausable.IAll_Group_Events {
   
     [SerializeField] bool isScrolling;
     [SerializeField] float scrollSpeed;
@@ -37,4 +37,14 @@ public class BackgroundScroller : MonoBehaviour {
         }
 
 	}
+
+    public void OnPause()
+    {
+        stopScroll();
+    }
+
+    public void OnResume()
+    {
+        startScroll();
+    }
 }

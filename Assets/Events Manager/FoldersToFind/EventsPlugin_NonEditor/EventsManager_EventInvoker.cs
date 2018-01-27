@@ -83,10 +83,12 @@ _users_IOnResume.ForEach(x=> x.OnResume());
 namespace Methods {
 public interface IOnHit_Int32 : Tools.IEventMethodBase{ void OnHit(System.Int32 currentPlayerHp); }
 public interface IOnDie : Tools.IEventMethodBase{ void OnDie(); }
+public interface IOnDashAvailable : Tools.IEventMethodBase{ void OnDashAvailable(); }
 
 }public static class Invoke {
 static List<Methods.IOnHit_Int32> _users_IOnHit_Int32  = new List<Methods.IOnHit_Int32>();
 static List<Methods.IOnDie> _users_IOnDie  = new List<Methods.IOnDie>();
+static List<Methods.IOnDashAvailable> _users_IOnDashAvailable  = new List<Methods.IOnDashAvailable>();
 internal static void RegisterUser(Methods.IOnHit_Int32 user){
 if(user == null) return;
 if(!_users_IOnHit_Int32.Contains(user)) _users_IOnHit_Int32.Add(user);
@@ -109,8 +111,19 @@ if(_users_IOnDie.Contains(user)) _users_IOnDie.Remove(user);
 public static void OnDie(){
 _users_IOnDie.ForEach(x=> x.OnDie());   
 }
+internal static void RegisterUser(Methods.IOnDashAvailable user){
+if(user == null) return;
+if(!_users_IOnDashAvailable.Contains(user)) _users_IOnDashAvailable.Add(user);
+}
+internal static void UnRegisterUser(Methods.IOnDashAvailable user){
+if(user == null) return;
+if(_users_IOnDashAvailable.Contains(user)) _users_IOnDashAvailable.Remove(user);
+}
+public static void OnDashAvailable(){
+_users_IOnDashAvailable.ForEach(x=> x.OnDashAvailable());   
+}
 
-}public interface IAll_Group_Events:Methods.IOnHit_Int32,Methods.IOnDie{ }
+}public interface IAll_Group_Events:Methods.IOnHit_Int32,Methods.IOnDie,Methods.IOnDashAvailable{ }
 
 }namespace Level {
 namespace Methods {
@@ -164,6 +177,8 @@ if(user is Groups.Player.Methods.IOnHit_Int32)
 	Groups.Player.Invoke.RegisterUser(user as Groups.Player.Methods.IOnHit_Int32);
 if(user is Groups.Player.Methods.IOnDie)
 	Groups.Player.Invoke.RegisterUser(user as Groups.Player.Methods.IOnDie);
+if(user is Groups.Player.Methods.IOnDashAvailable)
+	Groups.Player.Invoke.RegisterUser(user as Groups.Player.Methods.IOnDashAvailable);
 if(user is Groups.Level.Methods.IOnLevelEnd)
 	Groups.Level.Invoke.RegisterUser(user as Groups.Level.Methods.IOnLevelEnd);
 if(user is Groups.Level.Methods.IOnLevelStart)
@@ -182,6 +197,8 @@ if(user is Groups.Player.Methods.IOnHit_Int32)
 	Groups.Player.Invoke.UnRegisterUser(user as Groups.Player.Methods.IOnHit_Int32);
 if(user is Groups.Player.Methods.IOnDie)
 	Groups.Player.Invoke.UnRegisterUser(user as Groups.Player.Methods.IOnDie);
+if(user is Groups.Player.Methods.IOnDashAvailable)
+	Groups.Player.Invoke.UnRegisterUser(user as Groups.Player.Methods.IOnDashAvailable);
 if(user is Groups.Level.Methods.IOnLevelEnd)
 	Groups.Level.Invoke.UnRegisterUser(user as Groups.Level.Methods.IOnLevelEnd);
 if(user is Groups.Level.Methods.IOnLevelStart)

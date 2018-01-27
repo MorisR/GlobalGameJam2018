@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour {
 
     static LevelManager _instance;
-
     public static LevelManager Instance
     {
         get
@@ -31,10 +30,6 @@ public class LevelManager : MonoBehaviour {
         else _instance = this;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	}
-
 
 
 
