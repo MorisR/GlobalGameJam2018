@@ -65,9 +65,6 @@ public class PlayerShip : Events.Tools.MonoBehaviour_EventManagerBase ,Events.Gr
            // hurtAnimator.SetTrigger("OnHitTrigger");
         }
 
-        if (Input.GetKeyDown((KeyCode.Z)))
-	        Events.Groups.Astroid.Invoke.FlyAwayFromPlayer(transform.position,20f);
-
         if (hurtAnimator.GetCurrentAnimatorStateInfo(0).IsName("Avatar_Dead"))
             LevelManager.Instance.LoadScene("GameOver");
     }
