@@ -12,7 +12,7 @@ public class PlayerShip : Events.Tools.MonoBehaviour_EventManagerBase ,Events.Gr
     [SerializeField] float invisibilityDuration;
     [SerializeField] Animator shipAnimator;
     [SerializeField] public Animator hurtAnimator;
-    public AudioSource soundEffect;
+    //public AudioSource soundEffect;
 
 
 
@@ -46,7 +46,7 @@ public class PlayerShip : Events.Tools.MonoBehaviour_EventManagerBase ,Events.Gr
             //todo play palyer die animaation
             shipAnimator.SetTrigger("OnDieTrigger");
             hurtAnimator.SetTrigger("OnDieTrigger");
-            soundEffect.Play();
+            //soundEffect.Play();
         }
     }
 
@@ -68,6 +68,8 @@ public class PlayerShip : Events.Tools.MonoBehaviour_EventManagerBase ,Events.Gr
         if (Input.GetKeyDown((KeyCode.Z)))
 	        Events.Groups.Astroid.Invoke.FlyAwayFromPlayer(transform.position,20f);
 
+        if (hurtAnimator.GetCurrentAnimatorStateInfo(0).IsName("Avatar_Dead"))
+            LevelManager.Instance.LoadScene("GameOver");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

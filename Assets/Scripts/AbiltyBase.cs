@@ -13,12 +13,15 @@ public class AbiltyBase : Events.Tools.MonoBehaviour_EventManagerBase, Events.Gr
     float coolDownTimeSimple;
     protected PlayerShip ship;
 
-    private bool isReadyVisualShown;
+    private bool isReadyVisualShown = false;
 
     public virtual void Use()
     {
         if (IsAvailbale && !isPaused)
+        {
             coolDownTimeSimple = Time.time;
+            isReadyVisualShown = false;
+        }
     }
 
     public bool IsAvailbale
