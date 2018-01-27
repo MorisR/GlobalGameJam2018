@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MoviePlayer : MonoBehaviour {
 
     [SerializeField] MovieTexture movie;
+    [SerializeField] string sceneToLoad;
     AudioSource audioSource;
 
 	// Use this for initialization
@@ -20,6 +21,9 @@ public class MoviePlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (!movie.isPlaying && sceneToLoad != "")
+            LevelManager.Instance.LoadScene(sceneToLoad);
 		
 	}
 }
