@@ -47,13 +47,6 @@ public class PlayerShip : Events.Tools.MonoBehaviour_EventManagerBase ,Events.Gr
 
     }
 
-/* should use this method in case of multiple abilities
-    public void UseAbilty(int index)
-    {
-
-    }
-*/
-
     // Use this for initialization
     void Start ()
     {
