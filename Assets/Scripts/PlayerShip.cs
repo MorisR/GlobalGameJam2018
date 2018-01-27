@@ -96,7 +96,7 @@ public class PlayerShip : Events.Tools.MonoBehaviour_EventManagerBase ,Events.Gr
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "EndPlanet")
-            LevelManager.Instance.LoadScene("Credits");
+            LevelManager.Instance.LoadScene("Win");
         if (collision.gameObject.tag == "Pizza")
         {
             Events.Groups.Level.Invoke.OnLevelStart();

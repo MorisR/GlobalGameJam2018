@@ -242,6 +242,7 @@
     <Compile Include="Assets\Scripts\PlayerShip.cs" />
     <Compile Include="Assets\Scripts\ShipBlinkAbility.cs" />
     <Compile Include="Assets\Scripts\ShipMovment.cs" />
+    <Compile Include="Assets\Scripts\SkipCutscene.cs" />
     <Compile Include="Assets\Scripts\Spawners\AstroidSpawner.cs" />
     <Compile Include="Assets\Scripts\Spawners\DiagnalAstroidSpawner.cs" />
     <Compile Include="Assets\Scripts\Spawners\RandomAstroidSpawner.cs" />

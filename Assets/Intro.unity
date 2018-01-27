@@ -142,7 +142,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1115147549}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 614462898}
   - component: {fileID: 614462897}
   m_Layer: 0
-  m_Name: BacktoMenu
+  m_Name: Skipcutscene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 614462896}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1948faaaf37a604eab6d455efa71c60, type: 3}
+  m_Script: {fileID: 11500000, guid: fc261e96fbc0cce43b7291b635324a46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &614462898
@@ -459,11 +459,11 @@ RectTransform:
   m_GameObject: {fileID: 1115147545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.017152658, y: 0.017152658, z: 0.017152658}
+  m_LocalScale: {x: 0.017361112, y: 0.017361112, z: 0.017361112}
   m_Children:
   - {fileID: 2023289613}
-  - {fileID: 1651034543}
   - {fileID: 192407328}
+  - {fileID: 1651034543}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -581,7 +581,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1115147549}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -628,7 +628,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 614462897}
-        m_MethodName: LoadMenuScene
+        m_MethodName: LoadMainScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
