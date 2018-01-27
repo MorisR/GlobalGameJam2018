@@ -22,10 +22,9 @@ GameObject:
   - component: {fileID: 212675788095266126}
   - component: {fileID: 114145667662134024}
   - component: {fileID: 95415009307359284}
-  - component: {fileID: 60358254409354046}
   m_Layer: 0
   m_Name: Sprite
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,6 +39,9 @@ GameObject:
   - component: {fileID: 4446329717092140}
   - component: {fileID: 114821341291270102}
   - component: {fileID: 114567211521010934}
+  - component: {fileID: 60085291377568838}
+  - component: {fileID: 82714922051213514}
+  - component: {fileID: 114569274099958362}
   m_Layer: 0
   m_Name: LavaAstroid
   m_TagString: Obstacle
@@ -68,22 +70,22 @@ Transform:
   m_GameObject: {fileID: 1893754144327740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.02, y: 1.49, z: 0}
-  m_LocalScale: {x: 3.2281933, y: 3.2281933, z: 0.64563864}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 4181970978279960}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &60358254409354046
+--- !u!60 &60085291377568838
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1029945241284564}
+  m_GameObject: {fileID: 1893754144327740}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -98,57 +100,103 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.5999999, y: -0.6529999}
-      - {x: 1.5999999, y: -0.56299984}
-      - {x: 1.67, y: -0.46299988}
-      - {x: 1.67, y: -0.36299986}
-      - {x: 1.66, y: -0.28299987}
-      - {x: 1.64, y: -0.15299988}
-      - {x: 1.62, y: 0.027000122}
-      - {x: 1.53, y: 0.09700012}
-      - {x: 1.4499999, y: 0.11700012}
-      - {x: 1.36, y: 0.25700012}
-      - {x: 1.18, y: 0.25700012}
-      - {x: 0.9, y: 0.37700012}
-      - {x: 0.74, y: 0.3870001}
-      - {x: 0.58, y: 0.4870001}
-      - {x: 0.42, y: 0.5670001}
-      - {x: 0.26999998, y: 0.58700013}
-      - {x: 0.19, y: 0.5970001}
-      - {x: -0.03, y: 0.5970001}
-      - {x: -0.19, y: 0.58700013}
-      - {x: -0.34, y: 0.58700013}
-      - {x: -0.53999996, y: 0.5270001}
-      - {x: -0.72999996, y: 0.43700013}
-      - {x: -0.85999995, y: 0.3370001}
-      - {x: -0.96999997, y: 0.27700013}
-      - {x: -1.25, y: 0.13700011}
-      - {x: -1.41, y: 0.027000122}
-      - {x: -1.56, y: -0.0029998778}
-      - {x: -1.63, y: -0.11299988}
-      - {x: -1.65, y: -0.19299987}
-      - {x: -1.65, y: -0.36299986}
-      - {x: -1.64, y: -0.41299987}
-      - {x: -1.5899999, y: -0.49299988}
-      - {x: -1.4499999, y: -0.6429999}
-      - {x: -1.35, y: -0.68299985}
-      - {x: -1.1899999, y: -0.75299984}
-      - {x: -1.05, y: -0.79299986}
-      - {x: -0.90999997, y: -0.81299984}
-      - {x: -0.81, y: -0.81299984}
-      - {x: -0.72999996, y: -0.86299986}
-      - {x: -0.61, y: -0.9029999}
-      - {x: -0.42999998, y: -0.93299985}
-      - {x: -0.26999998, y: -0.92299986}
-      - {x: -0.24, y: -0.9029999}
-      - {x: -0.089999996, y: -0.8929999}
-      - {x: 0.06, y: -0.91299987}
-      - {x: 0.39999998, y: -0.93299985}
-      - {x: 0.45999998, y: -0.94299984}
-      - {x: 0.61, y: -0.94299984}
-      - {x: 0.87, y: -0.86299986}
-      - {x: 1.28, y: -0.88299984}
-      - {x: 1.4399999, y: -0.8329999}
+    - - {x: 0.17432562, y: 0.09409746}
+      - {x: 0.1032586, y: 0.14315614}
+      - {x: -0.073318705, y: 0.15581307}
+      - {x: -0.3930905, y: 0.008030295}
+      - {x: -0.41097158, y: -0.08503656}
+      - {x: -0.35128638, y: -0.16179077}
+      - {x: -0.31182706, y: -0.17401129}
+      - {x: -0.28228468, y: -0.20111035}
+      - {x: -0.20291752, y: -0.20127407}
+      - {x: -0.16249728, y: -0.22387753}
+      - {x: -0.068879485, y: -0.23057859}
+      - {x: -0.04468832, y: -0.21412998}
+      - {x: 0.12949678, y: -0.24292368}
+      - {x: 0.21668056, y: -0.21365055}
+      - {x: 0.364637, y: -0.20691288}
+      - {x: 0.41662884, y: -0.10703313}
+      - {x: 0.3957711, y: 0.016654452}
+--- !u!82 &82714922051213514
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1893754144327740}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9b028c3dcb7bbcf4cbbd043c78a3607b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95415009307359284
 Animator:
   serializedVersion: 3
@@ -177,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e8af4ba2d7afb6439996440d030b8ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 30
+  rotationSpeed: 0
 --- !u!114 &114567211521010934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -189,10 +237,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52af20697fb313d4cb94aef8c351a6cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collider: {fileID: 0}
   movedObject: {fileID: 4446329717092140}
   direction: {x: 0, y: 0, z: 0}
   speed: 0
+--- !u!114 &114569274099958362
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1893754144327740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6a578c47024de48a69dad369327a30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 82714922051213514}
 --- !u!114 &114821341291270102
 MonoBehaviour:
   m_ObjectHideFlags: 1

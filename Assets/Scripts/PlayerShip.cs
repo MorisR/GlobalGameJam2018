@@ -12,6 +12,9 @@ public class PlayerShip : Events.Tools.MonoBehaviour_EventManagerBase ,Events.Gr
     [SerializeField] float invisibilityDuration;
     [SerializeField] Animator shipAnimator;
     [SerializeField] public Animator hurtAnimator;
+    public AudioSource soundEffect;
+
+
 
     Color shipInitialColor;
 
@@ -35,15 +38,16 @@ public class PlayerShip : Events.Tools.MonoBehaviour_EventManagerBase ,Events.Gr
             shipAnimator.SetBool("OnHit", true);
             Events.Groups.Player.Invoke.OnHit(currentHP);
         }
+
         if (currentHP == 0)
         {
             Events.Groups.Player.Invoke.OnDie();
 
+            //todo play palyer die animaation
             shipAnimator.SetTrigger("OnDieTrigger");
             hurtAnimator.SetTrigger("OnDieTrigger");
-
+            soundEffect.Play();
         }
-
     }
 
     // Use this for initialization
@@ -53,7 +57,8 @@ public class PlayerShip : Events.Tools.MonoBehaviour_EventManagerBase ,Events.Gr
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         if (!IsInvonrable)
         {
             shipAnimator.SetBool("OnHit", false);
