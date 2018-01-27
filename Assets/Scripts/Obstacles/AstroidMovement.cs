@@ -8,8 +8,8 @@ public class AstroidMovement : GameInstance,Events.Groups.Pausable.IAll_Group_Ev
 {
    [SerializeField] private Transform movedObject;
    //[SerializeField] private bool IsInScene;
-   [SerializeField] private Vector3 direction;
-   [SerializeField] private float speed;
+   [SerializeField] public Vector3 direction;
+   [SerializeField] public float speed;
 
 
     //[SerializeField] private SpriteRenderer renderer;

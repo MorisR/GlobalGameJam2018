@@ -23,6 +23,10 @@ public class ShipMovment : Events.Tools.MonoBehaviour_EventManagerBase, Events.G
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
+        //horizontal = Input.GetAxis("HorizontalController");
+        //vertical = Input.GetAxis("VerticalController");
+
+
         direction.Set(horizontal, vertical);
         direction = direction.normalized;
         /*
@@ -39,7 +43,7 @@ public class ShipMovment : Events.Tools.MonoBehaviour_EventManagerBase, Events.G
 
         */
 
-        if(Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
+        if(Input.GetButton("Horizontal") || Input.GetButton("Vertical" ))
             if (currnetSpeed < maxSpeed)
                 currnetSpeed += acceleration;
             else currnetSpeed = maxSpeed;

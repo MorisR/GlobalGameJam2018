@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
+   // public List<Wave> waves;  
 
     public void LoadMainScene()
     {
@@ -24,4 +25,11 @@ public class LevelManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	}
+
+
+
+
+
+
+
 }
