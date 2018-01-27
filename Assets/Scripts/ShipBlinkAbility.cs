@@ -19,12 +19,11 @@ public class ShipBlinkAbility : AbiltyBase
     [SerializeField] float shadowDistanceMax;
     [SerializeField] float shadowDistanceScale;
 
-    [Space, Space, Header("Shadow Settings")]
-    [SerializeField] Animator anim;
+    [Space, Space, Header("Shadow Settings")] 
+    [SerializeField] Animator shipAnimator;
 
     float shadowDistance = 0f;
 
-    [SerializeField] Animator shipAnimator;
 
     Vector3 blinkTarget;
     bool isBlinking = false;
@@ -95,7 +94,8 @@ public class ShipBlinkAbility : AbiltyBase
 
     public override void ShowVisuals()
     {
-        anim.SetTrigger("OnAbilityReady");
+       // Events.Groups.Level.Invoke.OnLevelEnd();
+        shipAnimator.SetTrigger("OnAbilityReadyTrigger");
     }
 
     public static float Angle(Vector2 p_vector2)

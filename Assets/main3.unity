@@ -282,7 +282,8 @@ Prefab:
       propertyPath: hurtAnimator
       value: 
       objectReference: {fileID: 1153544655}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114961613888605218, guid: eb6d689642758d44fb30ceea06c9ee2f, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: eb6d689642758d44fb30ceea06c9ee2f, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &408526205 stripped
